@@ -2579,14 +2579,14 @@ importers:
   packages/openai:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
