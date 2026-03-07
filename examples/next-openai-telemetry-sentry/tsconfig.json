@@ -27,7 +27,6 @@
         "./*"
       ]
     },
-    "composite": true,
     "noEmit": true
   },
   "include": [
@@ -40,16 +39,5 @@
     "node_modules",
     "instrumentation.ts",
     "sentry.*.config.js"
-  ],
-  "references": [
-    {
-      "path": "../../packages/ai"
-    },
-    {
-      "path": "../../packages/openai"
-    },
-    {
-      "path": "../../packages/react"
-    }
   ]
 }

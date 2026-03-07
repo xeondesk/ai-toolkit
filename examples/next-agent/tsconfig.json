@@ -30,7 +30,6 @@
         "./util/*"
       ]
     },
-    "composite": true,
     "noEmit": true
   },
   "include": [
@@ -41,16 +40,5 @@
   ],
   "exclude": [
     "node_modules"
-  ],
-  "references": [
-    {
-      "path": "../../packages/ai"
-    },
-    {
-      "path": "../../packages/openai"
-    },
-    {
-      "path": "../../packages/react"
-    }
   ]
 }
