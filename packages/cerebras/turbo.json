@@ -1,8 +1,16 @@
 {
-  "extends": ["//"],
+  "extends": [
+    "//"
+  ],
   "tasks": {
     "build": {
-      "outputs": ["**/dist/**"]
+      "dependsOn": [
+        "@ai-toolkit/provider#build",
+        "@ai-toolkit/provider-utils#build"
+      ],
+      "outputs": [
+        "**/dist/**"
+      ]
     }
   }
 }
