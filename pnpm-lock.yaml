@@ -2085,10 +2085,10 @@ importers:
   packages/elevenlabs:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
