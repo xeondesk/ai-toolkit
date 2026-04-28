@@ -33,9 +33,9 @@ export type EmbeddingModelV4 = {
    * Use Infinity for models that do not have a limit.
    */
   readonly maxEmbeddingsPerCall:
-  | PromiseLike<number | undefined>
-  | number
-  | undefined;
+    | PromiseLike<number | undefined>
+    | number
+    | undefined;
 
   /**
    * True if the model can handle multiple embedding calls in parallel.

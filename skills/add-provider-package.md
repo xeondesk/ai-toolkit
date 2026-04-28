@@ -216,10 +216,7 @@ See existing implementations like `packages/openai/src/chat/openai-chat-language
     "composite": true
   },
   "include": ["src/**/*.ts"],
-  "references": [
-    { "path": "../provider" },
-    { "path": "../provider-utils" }
-  ]
+  "references": [{ "path": "../provider" }, { "path": "../provider-utils" }]
 }
 ```
 
@@ -258,7 +255,9 @@ const server = createTestServer({
 // Use server.urls to set mock responses
 server.urls['https://api.<provider>.com/v1/chat/completions'].response = {
   type: 'json-value',
-  body: { /* mock response */ },
+  body: {
+    /* mock response */
+  },
 };
 ```
 

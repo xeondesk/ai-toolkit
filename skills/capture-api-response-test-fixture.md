@@ -15,6 +15,7 @@ For non-streaming API responses, capture the full JSON response body.
 **Location**: `src/<model-type>/__fixtures__/<fixture-name>.json`
 
 **Example** (chat completion):
+
 ```json
 {
   "id": "chatcmpl-abc123",
@@ -49,6 +50,7 @@ For streaming responses, capture each chunk as a separate line in a `.chunks.txt
 **Format**: One JSON object per line (without the `data: ` prefix)
 
 **Example**:
+
 ```
 {"id":"chatcmpl-abc123","object":"chat.completion.chunk","created":1711115037,"model":"gpt-3.5-turbo","choices":[{"index":0,"delta":{"role":"assistant","content":""},"finish_reason":null}]}
 {"id":"chatcmpl-abc123","object":"chat.completion.chunk","created":1711115037,"model":"gpt-3.5-turbo","choices":[{"index":0,"delta":{"content":"Hello"},"finish_reason":null}]}
@@ -69,17 +71,17 @@ const provider = createOpenAI({
   apiKey: process.env.OPENAI_API_KEY,
   fetch: async (url, options) => {
     const response = await fetch(url, options);
-    
+
     // Clone response to read body
     const cloned = response.clone();
     const body = await cloned.text();
-    
+
     console.log('=== API Response ===');
     console.log('URL:', url);
     console.log('Status:', response.status);
     console.log('Body:', body);
     console.log('===================');
-    
+
     return response;
   },
 });
@@ -100,19 +102,21 @@ const provider = createOpenAI({
   apiKey: process.env.OPENAI_API_KEY,
   fetch: async (url, options) => {
     const response = await fetch(url, options);
-    
+
     if (response.headers.get('content-type')?.includes('text/event-stream')) {
       const reader = response.body!.getReader();
       const decoder = new TextDecoder();
       const chunks: string[] = [];
-      
+
       while (true) {
         const { done, value } = await reader.read();
         if (done) break;
-        
+
         const text = decoder.decode(value);
-        const lines = text.split('\n').filter(line => line.startsWith('data: '));
-        
+        const lines = text
+          .split('\n')
+          .filter(line => line.startsWith('data: '));
+
         for (const line of lines) {
           const data = line.slice(6); // Remove 'data: ' prefix
           if (data !== '[DONE]') {
@@ -121,14 +125,11 @@ const provider = createOpenAI({
           }
         }
       }
-      
+
       // Write to file
-      require('fs').writeFileSync(
-        'fixture.chunks.txt',
-        chunks.join('\n')
-      );
+      require('fs').writeFileSync('fixture.chunks.txt', chunks.join('\n'));
     }
-    
+
     return response;
   },
 });
@@ -187,7 +188,7 @@ it('should stream response', async () => {
 
   const result = await model.doStream({ prompt: TEST_PROMPT });
   const chunks = await convertReadableStreamToArray(result.stream);
-  
+
   expect(chunks).toMatchInlineSnapshot(`...`);
 });
 ```

@@ -118,10 +118,12 @@ import { z } from 'zod';
 const result = streamObject({
   model: openai('gpt-4o'),
   schema: z.object({
-    characters: z.array(z.object({
-      name: z.string(),
-      description: z.string(),
-    })),
+    characters: z.array(
+      z.object({
+        name: z.string(),
+        description: z.string(),
+      }),
+    ),
   }),
   prompt: 'Generate 3 fantasy characters.',
 });

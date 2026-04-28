@@ -27,14 +27,15 @@ export type OpenAIChatModelId =
   | 'gpt-4o'
   | 'gpt-4o-mini'
   | 'gpt-4-turbo'
-  | 'gpt-5'           // New model
-  | 'gpt-5-mini'      // New model
+  | 'gpt-5' // New model
+  | 'gpt-5-mini' // New model
   | (string & {});
 ```
 
 ### Model ID Conventions
 
 1. **Include dated versions** when available:
+
    ```typescript
    | 'gpt-4o'
    | 'gpt-4o-2024-08-06'
@@ -54,12 +55,10 @@ export const openaiChatLanguageModelOptions = lazySchema(() =>
   zodSchema(
     z.object({
       // Existing options...
-      
+
       // New option for reasoning models
-      reasoningEffort: z
-        .enum(['low', 'medium', 'high'])
-        .optional(),
-        
+      reasoningEffort: z.enum(['low', 'medium', 'high']).optional(),
+
       // New option for specific models
       webSearch: z.boolean().optional(),
     }),
@@ -101,12 +100,12 @@ private get systemMessageMode(): 'system' | 'developer' | 'remove' {
   if (this.settings.systemMessageMode) {
     return this.settings.systemMessageMode;
   }
-  
+
   // Reasoning models use 'developer' role
   if (this.isReasoningModel) {
     return 'developer';
   }
-  
+
   return 'system';
 }
 ```
@@ -120,11 +119,11 @@ Update the provider documentation in `content/providers/`:
 
 ### Chat Models
 
-| Model | Description |
-|-------|-------------|
-| `gpt-4o` | Most capable model |
-| `gpt-4o-mini` | Smaller, faster model |
-| `gpt-5` | **New** - Next generation model |
+| Model         | Description                     |
+| ------------- | ------------------------------- |
+| `gpt-4o`      | Most capable model              |
+| `gpt-4o-mini` | Smaller, faster model           |
+| `gpt-5`       | **New** - Next generation model |
 ```
 
 ## Step 5: Add Tests for New Models
