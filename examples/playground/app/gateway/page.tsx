@@ -113,6 +113,11 @@ export default function GatewayPage() {
                   Providers
                 </Button>
               </Link>
+              <Link href="/models">
+                <Button variant="ghost" size="sm">
+                  Models
+                </Button>
+              </Link>
               <Link href="/playground">
                 <Button size="sm">
                   Playground
