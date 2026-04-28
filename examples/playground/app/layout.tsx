@@ -5,9 +5,9 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'AI Toolkit Playground',
+  title: 'AI Toolkit - The Framework Agnostic AI Toolkit',
   description:
-    'Interactive playground for experimenting with AI models and providers',
+    'The open-source AI toolkit designed to help developers build AI-powered applications and agents with React, Next.js, Vue, Svelte, Node.js, and more.',
 };
 
 export default function RootLayout({
