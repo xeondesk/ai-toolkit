@@ -107,6 +107,11 @@ export default function LandingPage() {
                   Frameworks
                 </Button>
               </Link>
+              <Link href="/gateway">
+                <Button variant="ghost" size="sm">
+                  Gateway
+                </Button>
+              </Link>
               <Link href="/playground">
                 <Button variant="ghost" size="sm">
                   Playground
