@@ -2,7 +2,7 @@
   "private": true,
   "name": "ai-monorepo",
   "scripts": {
-    "build": "turbo build --concurrency 16",
+    "build": "turbo build --concurrency 21",
     "build:examples": "turbo build --filter=@example/*",
     "build:packages": "turbo build --filter=@ai-toolkit/* --filter=ai",
     "changeset": "changeset",
@@ -83,7 +83,14 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
-      "esbuild"
+      "@nestjs/core",
+      "@sentry/cli",
+      "esbuild",
+      "lmdb",
+      "msgpackr-extract",
+      "msw",
+      "protobufjs",
+      "sharp"
     ]
   }
 }

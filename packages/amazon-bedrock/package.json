@@ -39,15 +39,15 @@
     }
   },
   "dependencies": {
-    "@ai-toolkit/anthropic": "0.0.0",
-    "@ai-toolkit/provider": "0.0.0",
-    "@ai-toolkit/provider-utils": "0.0.0",
+    "@ai-toolkit/anthropic": "workspace:*",
+    "@ai-toolkit/provider": "workspace:*",
+    "@ai-toolkit/provider-utils": "workspace:*",
     "@smithy/eventstream-codec": "^4.0.1",
     "@smithy/util-utf8": "^4.0.0",
     "aws4fetch": "^1.0.20"
   },
   "devDependencies": {
-    "@ai-toolkit/test-server": "0.0.0",
+    "@ai-toolkit/test-server": "workspace:*",
     "@types/node": "20.17.24",
     "@khulnasoft/ai-tsconfig": "workspace:*",
     "tsup": "^8.3.0",

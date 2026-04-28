@@ -40,12 +40,12 @@
     }
   },
   "dependencies": {
-    "@ai-toolkit/provider": "0.0.0",
-    "@ai-toolkit/provider-utils": "0.0.0",
+    "@ai-toolkit/provider": "workspace:*",
+    "@ai-toolkit/provider-utils": "workspace:*",
     "pkce-challenge": "^5.0.0"
   },
   "devDependencies": {
-    "@ai-toolkit/test-server": "0.0.0",
+    "@ai-toolkit/test-server": "workspace:*",
     "@types/node": "20.17.24",
     "@khulnasoft/ai-tsconfig": "workspace:*",
     "tsup": "^8",

@@ -13,15 +13,15 @@ export function prepareTools({
   toolChoice?: LanguageModelV3CallOptions['toolChoice'];
 }): {
   tools:
-    | Array<{
-        type: 'function';
-        function: {
-          name: string;
-          description: string | undefined;
-          parameters: unknown;
-        };
-      }>
-    | undefined;
+  | Array<{
+    type: 'function';
+    function: {
+      name: string;
+      description: string | undefined;
+      parameters: unknown;
+    };
+  }>
+  | undefined;
   toolChoice: XaiToolChoice | undefined;
   toolWarnings: SharedV3Warning[];
 } {
@@ -34,7 +34,7 @@ export function prepareTools({
     return { tools: undefined, toolChoice: undefined, toolWarnings };
   }
 
-  // convert ai sdk tools to xai format
+  // convert ai toolkit tools to xai format
   const xaiTools: Array<{
     type: 'function';
     function: {

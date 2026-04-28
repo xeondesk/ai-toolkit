@@ -66,112 +66,112 @@ importers:
   examples/ai-functions:
     dependencies:
       '@ai-toolkit/amazon-bedrock':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/amazon-bedrock
       '@ai-toolkit/anthropic':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/anthropic
       '@ai-toolkit/assemblyai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/assemblyai
       '@ai-toolkit/azure':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/azure
       '@ai-toolkit/baseten':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/baseten
       '@ai-toolkit/black-forest-labs':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/black-forest-labs
       '@ai-toolkit/cerebras':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/cerebras
       '@ai-toolkit/cohere':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/cohere
       '@ai-toolkit/deepgram':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/deepgram
       '@ai-toolkit/deepinfra':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/deepinfra
       '@ai-toolkit/deepseek':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/deepseek
       '@ai-toolkit/elevenlabs':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/elevenlabs
       '@ai-toolkit/fal':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/fal
       '@ai-toolkit/fireworks':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/fireworks
       '@ai-toolkit/gateway':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/gateway
       '@ai-toolkit/gladia':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/gladia
       '@ai-toolkit/google':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/google
       '@ai-toolkit/google-vertex':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/google-vertex
       '@ai-toolkit/groq':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/groq
       '@ai-toolkit/huggingface':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/huggingface
       '@ai-toolkit/hume':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/hume
       '@ai-toolkit/khulnasoft':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/khulnasoft
       '@ai-toolkit/lmnt':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/lmnt
       '@ai-toolkit/luma':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/luma
       '@ai-toolkit/mcp':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/mcp
       '@ai-toolkit/mistral':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/mistral
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       '@ai-toolkit/openai-compatible':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai-compatible
       '@ai-toolkit/perplexity':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/perplexity
       '@ai-toolkit/prodia':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/prodia
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/provider
       '@ai-toolkit/replicate':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/replicate
       '@ai-toolkit/revai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/revai
       '@ai-toolkit/togetherai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/togetherai
       '@ai-toolkit/valibot':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/valibot
       '@ai-toolkit/xai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/xai
       '@google/generative-ai':
         specifier: 0.21.0
@@ -238,10 +238,10 @@ importers:
   examples/angular:
     dependencies:
       '@ai-toolkit/angular':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/angular
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       '@angular/common':
         specifier: ^20.3.2
@@ -314,7 +314,7 @@ importers:
   examples/express:
     dependencies:
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       ai:
         specifier: 6.0.45
@@ -342,7 +342,7 @@ importers:
   examples/fastify:
     dependencies:
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       ai:
         specifier: 6.0.45
@@ -367,7 +367,7 @@ importers:
   examples/hono:
     dependencies:
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       '@hono/node-server':
         specifier: 1.13.7
@@ -395,7 +395,7 @@ importers:
   examples/mcp:
     dependencies:
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       '@modelcontextprotocol/sdk':
         specifier: ^1.24.0
@@ -414,7 +414,7 @@ importers:
         version: 3.25.76
     devDependencies:
       '@ai-toolkit/mcp':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/mcp
       '@types/express':
         specifier: 5.0.0
@@ -432,7 +432,7 @@ importers:
   examples/nest:
     dependencies:
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       '@nestjs/common':
         specifier: ^10.4.15
@@ -520,7 +520,7 @@ importers:
   examples/next:
     dependencies:
       '@ai-toolkit/react':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/react
       '@vercel/blob':
         specifier: ^0.26.0
@@ -573,7 +573,7 @@ importers:
         version: 8.5.6
       tailwindcss:
         specifier: ^3.4.15
-        version: 3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
+        version: 3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -581,10 +581,10 @@ importers:
   examples/next-agent:
     dependencies:
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       '@ai-toolkit/react':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/react
       '@vercel/blob':
         specifier: ^0.26.0
@@ -634,7 +634,7 @@ importers:
         version: 8.5.6
       tailwindcss:
         specifier: ^3.4.15
-        version: 3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
+        version: 3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -642,7 +642,7 @@ importers:
   examples/next-fastapi:
     dependencies:
       '@ai-toolkit/react':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/react
       ai:
         specifier: 6.0.45
@@ -686,7 +686,7 @@ importers:
         version: 8.5.6
       tailwindcss:
         specifier: ^3.4.15
-        version: 3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
+        version: 3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -694,7 +694,7 @@ importers:
   examples/next-google-vertex:
     dependencies:
       '@ai-toolkit/google-vertex':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/google-vertex
       ai:
         specifier: 6.0.45
@@ -722,14 +722,14 @@ importers:
         specifier: ^18
         version: 18.3.0
       eslint-config-khulnasoft-ai:
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../tools/eslint-config
       postcss:
         specifier: ^8.4.49
         version: 8.5.6
       tailwindcss:
         specifier: ^3.4.15
-        version: 3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
+        version: 3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -737,10 +737,10 @@ importers:
   examples/next-langchain:
     dependencies:
       '@ai-toolkit/langchain':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/langchain
       '@ai-toolkit/react':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/react
       '@langchain/core':
         specifier: ^1.1.5
@@ -802,7 +802,7 @@ importers:
         version: 8.5.6
       tailwindcss:
         specifier: ^3.4.15
-        version: 3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
+        version: 3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -810,58 +810,58 @@ importers:
   examples/next-openai:
     dependencies:
       '@ai-toolkit/amazon-bedrock':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/amazon-bedrock
       '@ai-toolkit/anthropic':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/anthropic
       '@ai-toolkit/azure':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/azure
       '@ai-toolkit/cohere':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/cohere
       '@ai-toolkit/deepseek':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/deepseek
       '@ai-toolkit/fireworks':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/fireworks
       '@ai-toolkit/google':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/google
       '@ai-toolkit/google-vertex':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/google-vertex
       '@ai-toolkit/groq':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/groq
       '@ai-toolkit/mcp':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/mcp
       '@ai-toolkit/mistral':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/mistral
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       '@ai-toolkit/perplexity':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/perplexity
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/provider-utils
       '@ai-toolkit/react':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/react
       '@ai-toolkit/rsc':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/rsc
       '@ai-toolkit/valibot':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/valibot
       '@ai-toolkit/xai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/xai
       '@modelcontextprotocol/sdk':
         specifier: ^1.10.2
@@ -919,7 +919,7 @@ importers:
         version: 3.4.0
       tailwindcss-animate:
         specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3)))
+        version: 1.0.7(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3)))
       valibot:
         specifier: 1.1.0
         version: 1.1.0(typescript@5.8.3)
@@ -950,7 +950,7 @@ importers:
         version: 8.5.6
       tailwindcss:
         specifier: ^3.4.15
-        version: 3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
+        version: 3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -958,10 +958,10 @@ importers:
   examples/next-openai-kasada-bot-protection:
     dependencies:
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       '@ai-toolkit/react':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/react
       '@vercel/functions':
         specifier: ^3.1.0
@@ -1005,7 +1005,7 @@ importers:
         version: 8.5.6
       tailwindcss:
         specifier: ^3.4.15
-        version: 3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
+        version: 3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -1013,10 +1013,10 @@ importers:
   examples/next-openai-pages:
     dependencies:
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       '@ai-toolkit/react':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/react
       ai:
         specifier: 6.0.45
@@ -1057,7 +1057,7 @@ importers:
         version: 8.5.6
       tailwindcss:
         specifier: ^3.4.15
-        version: 3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.4.5))
+        version: 3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.4.5))
       typescript:
         specifier: 5.4.5
         version: 5.4.5
@@ -1065,10 +1065,10 @@ importers:
   examples/next-openai-telemetry:
     dependencies:
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       '@ai-toolkit/react':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/react
       '@opentelemetry/api-logs':
         specifier: 0.55.0
@@ -1121,7 +1121,7 @@ importers:
         version: 8.5.6
       tailwindcss:
         specifier: ^3.4.15
-        version: 3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.6.3))
+        version: 3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.6.3))
       typescript:
         specifier: 5.6.3
         version: 5.6.3
@@ -1129,10 +1129,10 @@ importers:
   examples/next-openai-telemetry-sentry:
     dependencies:
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       '@ai-toolkit/react':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/react
       '@opentelemetry/api-logs':
         specifier: 0.55.0
@@ -1191,7 +1191,7 @@ importers:
         version: 8.5.6
       tailwindcss:
         specifier: ^3.4.15
-        version: 3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
+        version: 3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -1199,10 +1199,10 @@ importers:
   examples/next-openai-upstash-rate-limits:
     dependencies:
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       '@ai-toolkit/react':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/react
       '@upstash/ratelimit':
         specifier: ^0.4.3
@@ -1249,7 +1249,7 @@ importers:
         version: 8.5.6
       tailwindcss:
         specifier: ^3.4.15
-        version: 3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
+        version: 3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -1257,7 +1257,7 @@ importers:
   examples/node-http-server:
     dependencies:
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       ai:
         specifier: 6.0.45
@@ -1282,10 +1282,10 @@ importers:
   examples/nuxt-openai:
     dependencies:
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       '@ai-toolkit/vue':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/vue
       ai:
         specifier: 6.0.45
@@ -1337,49 +1337,49 @@ importers:
   examples/playground:
     dependencies:
       '@ai-toolkit/anthropic':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/anthropic
       '@ai-toolkit/azure':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/azure
       '@ai-toolkit/cohere':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/cohere
       '@ai-toolkit/deepseek':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/deepseek
       '@ai-toolkit/fireworks':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/fireworks
       '@ai-toolkit/google':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/google
       '@ai-toolkit/google-vertex':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/google-vertex
       '@ai-toolkit/groq':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/groq
       '@ai-toolkit/mistral':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/mistral
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/openai
       '@ai-toolkit/perplexity':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/perplexity
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/provider-utils
       '@ai-toolkit/react':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/react
       '@ai-toolkit/xai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../../packages/xai
       '@monaco-editor/react':
         specifier: ^4.6.0
@@ -1518,20 +1518,20 @@ importers:
   packages/ai:
     dependencies:
       '@ai-toolkit/gateway':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../gateway
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
       '@opentelemetry/api':
         specifier: 1.9.0
         version: 1.9.0
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@edge-runtime/vm':
         specifier: ^5.0.0
@@ -1570,13 +1570,13 @@ importers:
   packages/amazon-bedrock:
     dependencies:
       '@ai-toolkit/anthropic':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../anthropic
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
       '@smithy/eventstream-codec':
         specifier: ^4.0.1
@@ -1589,7 +1589,7 @@ importers:
         version: 1.0.20
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -1610,7 +1610,7 @@ importers:
   packages/angular:
     dependencies:
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
       '@angular/core':
         specifier: '>=16.0.0'
@@ -1620,7 +1620,7 @@ importers:
         version: link:../ai
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -1653,14 +1653,14 @@ importers:
   packages/anthropic:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -1681,14 +1681,14 @@ importers:
   packages/assemblyai:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -1709,17 +1709,17 @@ importers:
   packages/azure:
     dependencies:
       '@ai-toolkit/openai':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../openai
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -1740,13 +1740,13 @@ importers:
   packages/baseten:
     dependencies:
       '@ai-toolkit/openai-compatible':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../openai-compatible
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
       '@basetenlabs/performance-client':
         specifier: ^0.0.10
@@ -1771,14 +1771,14 @@ importers:
   packages/black-forest-labs:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -1799,13 +1799,13 @@ importers:
   packages/cerebras:
     dependencies:
       '@ai-toolkit/openai-compatible':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../openai-compatible
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@khulnasoft/ai-tsconfig':
@@ -1879,14 +1879,14 @@ importers:
   packages/cohere:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -1907,14 +1907,14 @@ importers:
   packages/deepgram:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -1935,17 +1935,17 @@ importers:
   packages/deepinfra:
     dependencies:
       '@ai-toolkit/openai-compatible':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../openai-compatible
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -1966,14 +1966,14 @@ importers:
   packages/deepseek:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -1994,7 +1994,7 @@ importers:
   packages/devtools:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@hono/node-server':
         specifier: ^1.13.7
@@ -2059,7 +2059,7 @@ importers:
         version: 3.4.0
       tailwindcss:
         specifier: ^4.1.17
-        version: 4.1.17
+        version: 4.1.18
       tsup:
         specifier: ^8
         version: 8.3.0(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.8.3)(yaml@2.7.0)
@@ -2092,7 +2092,7 @@ importers:
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2113,14 +2113,14 @@ importers:
   packages/fal:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2141,17 +2141,17 @@ importers:
   packages/fireworks:
     dependencies:
       '@ai-toolkit/openai-compatible':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../openai-compatible
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2172,17 +2172,17 @@ importers:
   packages/gateway:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
       '@vercel/oidc':
         specifier: 3.1.0
         version: 3.1.0
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2206,14 +2206,14 @@ importers:
   packages/gladia:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2234,14 +2234,14 @@ importers:
   packages/google:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2262,23 +2262,23 @@ importers:
   packages/google-vertex:
     dependencies:
       '@ai-toolkit/anthropic':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../anthropic
       '@ai-toolkit/google':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../google
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
       google-auth-library:
         specifier: ^10.5.0
         version: 10.5.0
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2299,14 +2299,14 @@ importers:
   packages/groq:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2327,17 +2327,17 @@ importers:
   packages/huggingface:
     dependencies:
       '@ai-toolkit/openai-compatible':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../openai-compatible
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2358,14 +2358,14 @@ importers:
   packages/hume:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2386,13 +2386,13 @@ importers:
   packages/khulnasoft:
     dependencies:
       '@ai-toolkit/openai-compatible':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../openai-compatible
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@khulnasoft/ai-tsconfig':
@@ -2418,7 +2418,7 @@ importers:
         version: link:../ai
     devDependencies:
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2461,14 +2461,14 @@ importers:
   packages/lmnt:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2489,14 +2489,14 @@ importers:
   packages/luma:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2517,17 +2517,17 @@ importers:
   packages/mcp:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
       pkce-challenge:
         specifier: ^5.0.0
         version: 5.0.0
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2551,14 +2551,14 @@ importers:
   packages/mistral:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2607,14 +2607,14 @@ importers:
   packages/openai-compatible:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2635,14 +2635,14 @@ importers:
   packages/perplexity:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2663,14 +2663,14 @@ importers:
   packages/prodia:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2713,7 +2713,7 @@ importers:
   packages/provider-utils:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@standard-schema/spec':
         specifier: ^1.1.0
@@ -2744,7 +2744,7 @@ importers:
   packages/react:
     dependencies:
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
       ai:
         specifier: workspace:*
@@ -2760,7 +2760,7 @@ importers:
         version: 2.1.0
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2811,14 +2811,14 @@ importers:
   packages/replicate:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2839,14 +2839,14 @@ importers:
   packages/revai:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -2867,10 +2867,10 @@ importers:
   packages/rsc:
     dependencies:
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
       ai:
         specifier: workspace:*
@@ -2952,14 +2952,14 @@ importers:
   packages/svelte:
     dependencies:
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
       ai:
         specifier: workspace:*
         version: link:../ai
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@eslint/compat':
         specifier: ^1.2.5
@@ -3044,17 +3044,17 @@ importers:
   packages/togetherai:
     dependencies:
       '@ai-toolkit/openai-compatible':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../openai-compatible
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -3075,7 +3075,7 @@ importers:
   packages/valibot:
     dependencies:
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@khulnasoft/ai-tsconfig':
@@ -3100,7 +3100,7 @@ importers:
   packages/vue:
     dependencies:
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
       ai:
         specifier: workspace:*
@@ -3113,7 +3113,7 @@ importers:
         version: 3.5.13(typescript@5.8.3)
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -3161,17 +3161,17 @@ importers:
   packages/xai:
     dependencies:
       '@ai-toolkit/openai-compatible':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../openai-compatible
       '@ai-toolkit/provider':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider
       '@ai-toolkit/provider-utils':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../provider-utils
     devDependencies:
       '@ai-toolkit/test-server':
-        specifier: 0.0.0
+        specifier: workspace:*
         version: link:../test-server
       '@khulnasoft/ai-tsconfig':
         specifier: workspace:*
@@ -10635,6 +10635,7 @@ packages:
   '@vercel/kv@0.2.4':
     resolution: {integrity: sha512-wbIOOXhg6MzmNMzKFSWbbLAS65hCZcJN33z1coENzI1M0fOX55yE9v9LwVGqkzdItp3eZsv6pYvwcmGtllyLTw==}
     engines: {node: '>=14.6'}
+    deprecated: 'Vercel KV is deprecated. If you had an existing KV store, it should have moved to Upstash Redis which you will see under Vercel Integrations. For new projects, install a Redis integration from Vercel Marketplace: https://vercel.com/marketplace?category=storage&search=redis'
 
   '@vercel/nft@0.27.6':
     resolution: {integrity: sha512-mwuyUxskdcV8dd7N7JnxBgvFEz1D9UOePI/WyLLzktv6HSCwgPNQGit/UJ2IykAWGlypKw4pBQjOKWvIbXITSg==}
@@ -10937,6 +10938,7 @@ packages:
   '@xmldom/xmldom@0.8.10':
     resolution: {integrity: sha512-2WALfTl4xo2SkGCYRt6rDTFfk9R1czmBvUQy12gK2KuRKIpWEhcbbzy8EZXtz/jkRqHX8bFEc6FC1HjX4TUWYw==}
     engines: {node: '>=10.0.0'}
+    deprecated: this version has critical issues, please update to the latest version
 
   '@xtuc/ieee754@1.2.0':
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
@@ -13685,24 +13687,27 @@ packages:
   glob@10.3.10:
     resolution: {integrity: sha512-fa46+tv1Ak0UPK1TOy/pZrIybNNt4HCv7SDzwyfiOZkvZLEbjsZkJBPtDHVshZjbecAoAGSC20MjLDG/qr679g==}
     engines: {node: '>=16 || 14 >=14.17'}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@10.4.5:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   glob@9.3.5:
     resolution: {integrity: sha512-e1LleDykUz2Iu+MTYdkSsuWX8lvAjAcs0Xef0lNIu0S2wOAzuTxCJtcd9S3cijlwYF18EsU3rzb8jPVobxDh9Q==}
     engines: {node: '>=16 || 14 >=14.17'}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   global-directory@4.0.1:
     resolution: {integrity: sha512-wHTUcDUoZ1H5/0iVqEudYW4/kAlN5cZ3j/bXn0Dpbizl9iaUVeWSHqiOjsgk6OW2bkLclbBjzewBz6weQ1zA2Q==}
@@ -18280,11 +18285,6 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  tailwindcss@3.4.17:
-    resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
-    engines: {node: '>=14.0.0'}
-    hasBin: true
-
   tailwindcss@4.1.17:
     resolution: {integrity: sha512-j9Ee2YjuQqYT9bbRTfTZht9W/ytp5H+jJpZKiYdP/bpnXARAuELt9ofP0lPnmHjbga7SNQIxdTAXCmtKVYjN+Q==}
 
@@ -18304,10 +18304,12 @@ packages:
   tar@6.2.0:
     resolution: {integrity: sha512-/Wo7DcT0u5HUV486xg675HtjNd3BXZ6xDbzsCUZPt5iw8bTQ63bP0Raut3mvro9u+CUyq7YQd8Cx55fsZXxqLQ==}
     engines: {node: '>=10'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   tar@7.4.3:
     resolution: {integrity: sha512-5S7Va8hKfV7W5U6g3aYxXmlPoZVAwUMy9AOKyF2fVuZa2UD3qZjg578OrLRt8PcNN1PleVaL/5/yYATNL0ICUw==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   term-img@6.0.0:
     resolution: {integrity: sha512-R4c+XtUiN/9lMlw+wldmxjPO/xlG3sIE79tcnE3A8CtcYMTDiOgAKy/EhroI+rmjB3cVyCkYSzTPBBjPsC7YdQ==}
@@ -18921,6 +18923,7 @@ packages:
 
   unplugin-vue-router@0.10.8:
     resolution: {integrity: sha512-xi+eLweYAqolIoTRSmumbi6Yx0z5M0PLvl+NFNVWHJgmE2ByJG1SZbrn+TqyuDtIyln20KKgq8tqmL7aLoiFjw==}
+    deprecated: 'Merged into vuejs/router. Migrate: https://router.vuejs.org/guide/migration/v4-to-v5.html'
     peerDependencies:
       vue-router: ^4.4.0
     peerDependenciesMeta:
@@ -19599,6 +19602,7 @@ packages:
   whatwg-encoding@3.1.1:
     resolution: {integrity: sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ==}
     engines: {node: '>=18'}
+    deprecated: Use @exodus/bytes instead for a more spec-conformant and faster implementation
 
   whatwg-mimetype@4.0.0:
     resolution: {integrity: sha512-QaKxh0eNIi2mE9p2vEdzfagOKHCcj1pJ56EEHGQOVxp8r9/iszLUUV7v89x9O1p/T+NlTM5W7jW6+cz4Fq1YVg==}
@@ -25521,8 +25525,8 @@ snapshots:
       pathe: 1.1.2
       postcss: 8.5.3
       postcss-nesting: 13.0.1(postcss@8.5.3)
-      tailwind-config-viewer: 2.0.4(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.9.3)))
-      tailwindcss: 3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.9.3))
+      tailwind-config-viewer: 2.0.4(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.9.3)))
+      tailwindcss: 3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.9.3))
       ufo: 1.5.4
       unctx: 2.3.1
     transitivePeerDependencies:
@@ -39559,7 +39563,7 @@ snapshots:
 
   system-architecture@0.1.0: {}
 
-  tailwind-config-viewer@2.0.4(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.9.3))):
+  tailwind-config-viewer@2.0.4(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.9.3))):
     dependencies:
       '@koa/router': 12.0.1
       commander: 6.2.1
@@ -39569,7 +39573,7 @@ snapshots:
       open: 7.4.2
       portfinder: 1.0.32
       replace-in-file: 6.3.5
-      tailwindcss: 3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.9.3))
+      tailwindcss: 3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.9.3))
     transitivePeerDependencies:
       - supports-color
 
@@ -39579,9 +39583,59 @@ snapshots:
     dependencies:
       tailwindcss: 3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
 
-  tailwindcss-animate@1.0.7(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))):
+  tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.4.5)):
     dependencies:
-      tailwindcss: 3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
+      '@alloc/quick-lru': 5.2.0
+      arg: 5.0.2
+      chokidar: 3.6.0
+      didyoumean: 1.2.2
+      dlv: 1.1.3
+      fast-glob: 3.3.2
+      glob-parent: 6.0.2
+      is-glob: 4.0.3
+      jiti: 1.21.6
+      lilconfig: 2.1.0
+      micromatch: 4.0.8
+      normalize-path: 3.0.0
+      object-hash: 3.0.0
+      picocolors: 1.1.1
+      postcss: 8.5.3
+      postcss-import: 15.1.0(postcss@8.5.3)
+      postcss-js: 4.0.1(postcss@8.5.3)
+      postcss-load-config: 4.0.2(postcss@8.5.3)(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.4.5))
+      postcss-nested: 6.2.0(postcss@8.5.3)
+      postcss-selector-parser: 6.1.2
+      resolve: 1.22.8
+      sucrase: 3.35.0
+    transitivePeerDependencies:
+      - ts-node
+
+  tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.6.3)):
+    dependencies:
+      '@alloc/quick-lru': 5.2.0
+      arg: 5.0.2
+      chokidar: 3.6.0
+      didyoumean: 1.2.2
+      dlv: 1.1.3
+      fast-glob: 3.3.2
+      glob-parent: 6.0.2
+      is-glob: 4.0.3
+      jiti: 1.21.6
+      lilconfig: 2.1.0
+      micromatch: 4.0.8
+      normalize-path: 3.0.0
+      object-hash: 3.0.0
+      picocolors: 1.1.1
+      postcss: 8.5.3
+      postcss-import: 15.1.0(postcss@8.5.3)
+      postcss-js: 4.0.1(postcss@8.5.3)
+      postcss-load-config: 4.0.2(postcss@8.5.3)(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.6.3))
+      postcss-nested: 6.2.0(postcss@8.5.3)
+      postcss-selector-parser: 6.1.2
+      resolve: 1.22.8
+      sucrase: 3.35.0
+    transitivePeerDependencies:
+      - ts-node
 
   tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3)):
     dependencies:
@@ -39622,114 +39676,6 @@ snapshots:
       is-glob: 4.0.3
       jiti: 1.21.6
       lilconfig: 2.1.0
-      micromatch: 4.0.8
-      normalize-path: 3.0.0
-      object-hash: 3.0.0
-      picocolors: 1.1.1
-      postcss: 8.5.3
-      postcss-import: 15.1.0(postcss@8.5.3)
-      postcss-js: 4.0.1(postcss@8.5.3)
-      postcss-load-config: 4.0.2(postcss@8.5.3)(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.9.3))
-      postcss-nested: 6.2.0(postcss@8.5.3)
-      postcss-selector-parser: 6.1.2
-      resolve: 1.22.8
-      sucrase: 3.35.0
-    transitivePeerDependencies:
-      - ts-node
-
-  tailwindcss@3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.4.5)):
-    dependencies:
-      '@alloc/quick-lru': 5.2.0
-      arg: 5.0.2
-      chokidar: 3.6.0
-      didyoumean: 1.2.2
-      dlv: 1.1.3
-      fast-glob: 3.3.2
-      glob-parent: 6.0.2
-      is-glob: 4.0.3
-      jiti: 1.21.6
-      lilconfig: 3.1.3
-      micromatch: 4.0.8
-      normalize-path: 3.0.0
-      object-hash: 3.0.0
-      picocolors: 1.1.1
-      postcss: 8.5.3
-      postcss-import: 15.1.0(postcss@8.5.3)
-      postcss-js: 4.0.1(postcss@8.5.3)
-      postcss-load-config: 4.0.2(postcss@8.5.3)(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.4.5))
-      postcss-nested: 6.2.0(postcss@8.5.3)
-      postcss-selector-parser: 6.1.2
-      resolve: 1.22.8
-      sucrase: 3.35.0
-    transitivePeerDependencies:
-      - ts-node
-
-  tailwindcss@3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.6.3)):
-    dependencies:
-      '@alloc/quick-lru': 5.2.0
-      arg: 5.0.2
-      chokidar: 3.6.0
-      didyoumean: 1.2.2
-      dlv: 1.1.3
-      fast-glob: 3.3.2
-      glob-parent: 6.0.2
-      is-glob: 4.0.3
-      jiti: 1.21.6
-      lilconfig: 3.1.3
-      micromatch: 4.0.8
-      normalize-path: 3.0.0
-      object-hash: 3.0.0
-      picocolors: 1.1.1
-      postcss: 8.5.3
-      postcss-import: 15.1.0(postcss@8.5.3)
-      postcss-js: 4.0.1(postcss@8.5.3)
-      postcss-load-config: 4.0.2(postcss@8.5.3)(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.6.3))
-      postcss-nested: 6.2.0(postcss@8.5.3)
-      postcss-selector-parser: 6.1.2
-      resolve: 1.22.8
-      sucrase: 3.35.0
-    transitivePeerDependencies:
-      - ts-node
-
-  tailwindcss@3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3)):
-    dependencies:
-      '@alloc/quick-lru': 5.2.0
-      arg: 5.0.2
-      chokidar: 3.6.0
-      didyoumean: 1.2.2
-      dlv: 1.1.3
-      fast-glob: 3.3.2
-      glob-parent: 6.0.2
-      is-glob: 4.0.3
-      jiti: 1.21.6
-      lilconfig: 3.1.3
-      micromatch: 4.0.8
-      normalize-path: 3.0.0
-      object-hash: 3.0.0
-      picocolors: 1.1.1
-      postcss: 8.5.3
-      postcss-import: 15.1.0(postcss@8.5.3)
-      postcss-js: 4.0.1(postcss@8.5.3)
-      postcss-load-config: 4.0.2(postcss@8.5.3)(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.8.3))
-      postcss-nested: 6.2.0(postcss@8.5.3)
-      postcss-selector-parser: 6.1.2
-      resolve: 1.22.8
-      sucrase: 3.35.0
-    transitivePeerDependencies:
-      - ts-node
-
-  tailwindcss@3.4.17(ts-node@10.9.2(@types/node@20.17.24)(typescript@5.9.3)):
-    dependencies:
-      '@alloc/quick-lru': 5.2.0
-      arg: 5.0.2
-      chokidar: 3.6.0
-      didyoumean: 1.2.2
-      dlv: 1.1.3
-      fast-glob: 3.3.2
-      glob-parent: 6.0.2
-      is-glob: 4.0.3
-      jiti: 1.21.6
-      lilconfig: 3.1.3
       micromatch: 4.0.8
       normalize-path: 3.0.0
       object-hash: 3.0.0

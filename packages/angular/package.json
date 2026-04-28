@@ -31,11 +31,11 @@
     "README.md"
   ],
   "dependencies": {
-    "@ai-toolkit/provider-utils": "0.0.0",
+    "@ai-toolkit/provider-utils": "workspace:*",
     "ai": "workspace:*"
   },
   "devDependencies": {
-    "@ai-toolkit/test-server": "0.0.0",
+    "@ai-toolkit/test-server": "workspace:*",
     "@types/node": "20.17.24",
     "@khulnasoft/ai-tsconfig": "workspace:*",
     "eslint": "8.57.1",

@@ -12,8 +12,8 @@
   },
   "private": true,
   "dependencies": {
-    "@ai-toolkit/angular": "0.0.0",
-    "@ai-toolkit/openai": "0.0.0",
+    "@ai-toolkit/angular": "workspace:*",
+    "@ai-toolkit/openai": "workspace:*",
     "@angular/common": "^20.3.2",
     "@angular/compiler": "^20.3.2",
     "@angular/core": "^20.3.2",

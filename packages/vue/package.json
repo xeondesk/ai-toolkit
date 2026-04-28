@@ -31,12 +31,12 @@
     "README.md"
   ],
   "dependencies": {
-    "@ai-toolkit/provider-utils": "0.0.0",
+    "@ai-toolkit/provider-utils": "workspace:*",
     "ai": "workspace:*",
     "swrv": "^1.0.4"
   },
   "devDependencies": {
-    "@ai-toolkit/test-server": "0.0.0",
+    "@ai-toolkit/test-server": "workspace:*",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/user-event": "^14.5.2",
     "@testing-library/vue": "^8.1.0",

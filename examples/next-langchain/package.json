@@ -11,8 +11,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ai-toolkit/react": "0.0.0",
-    "@ai-toolkit/langchain": "0.0.0",
+    "@ai-toolkit/react": "workspace:*",
+    "@ai-toolkit/langchain": "workspace:*",
     "@langchain/openai": "^1.2.0",
     "@langchain/core": "^1.1.5",
     "@langchain/langgraph": "^1.0.5",
