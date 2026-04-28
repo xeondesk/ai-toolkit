@@ -1,7 +1,7 @@
 import {
-  SharedV4Headers,
-  SharedV4ProviderMetadata,
-  SharedV4Warning,
+  SharedV3Headers,
+  SharedV3ProviderMetadata,
+  SharedV3Warning,
 } from '../../shared';
 import { EmbeddingModelV4Embedding } from './embedding-model-v4-embedding';
 
@@ -24,7 +24,7 @@ export type EmbeddingModelV4Result = {
    * from the provider to the AI TOOLKIT and enable provider-specific
    * results that can be fully encapsulated in the provider.
    */
-  providerMetadata?: SharedV4ProviderMetadata;
+  providerMetadata?: SharedV3ProviderMetadata;
 
   /**
    * Optional response information for debugging purposes.
@@ -33,7 +33,7 @@ export type EmbeddingModelV4Result = {
     /**
      * Response headers.
      */
-    headers?: SharedV4Headers;
+    headers?: SharedV3Headers;
 
     /**
      * The response body.
@@ -44,5 +44,5 @@ export type EmbeddingModelV4Result = {
   /**
    * Warnings for the call, e.g. unsupported settings.
    */
-  warnings: Array<SharedV4Warning>;
+  warnings: Array<SharedV3Warning>;
 };
