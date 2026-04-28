@@ -117,6 +117,11 @@ export default function LandingPage() {
                   Models
                 </Button>
               </Link>
+              <Link href="/docs">
+                <Button variant="ghost" size="sm">
+                  Docs
+                </Button>
+              </Link>
               <Link href="/playground">
                 <Button variant="ghost" size="sm">
                   Playground

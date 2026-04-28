@@ -369,6 +369,11 @@ export default function ModelsPage() {
                   Models
                 </Button>
               </Link>
+              <Link href="/docs">
+                <Button variant="ghost" size="sm">
+                  Docs
+                </Button>
+              </Link>
               <Link href="/gateway">
                 <Button variant="ghost" size="sm">
                   Gateway
@@ -378,6 +383,15 @@ export default function ModelsPage() {
                 <Button size="sm">
                   Playground
                   <ArrowUpRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+                </Button>
+              </Link>
+            </div>
                 </Button>
               </Link>
             </div>

@@ -1,8 +1,16 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Play, Code, MessageSquare, Settings } from 'lucide-react';
+import {
+  Play,
+  Code,
+  MessageSquare,
+  Settings,
+  Globe,
+  ArrowRight,
+} from 'lucide-react';
 import { ChatInterface } from '@/components/chat-interface';
 import { ProviderSelector } from '@/components/provider-selector';
 import { CodeEditor } from '@/components/code-editor';
@@ -51,8 +59,28 @@ export default function HomePage() {
       <header className="border-b">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold">AI Toolkit Playground</h1>
+            <Link href="/" className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                <Globe className="w-5 h-5 text-primary-foreground" />
+              </div>
+              <span className="text-xl font-bold">AI Toolkit</span>
+            </Link>
             <div className="flex items-center space-x-4">
+              <Link href="/models">
+                <Button variant="ghost" size="sm">
+                  Models
+                </Button>
+              </Link>
+              <Link href="/docs">
+                <Button variant="ghost" size="sm">
+                  Docs
+                </Button>
+              </Link>
+              <Link href="/gateway">
+                <Button variant="ghost" size="sm">
+                  Gateway
+                </Button>
+              </Link>
               <Button variant="outline" size="sm">
                 <Settings className="h-4 w-4 mr-2" />
                 Settings
