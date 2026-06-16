@@ -2,7 +2,7 @@
   "private": true,
   "name": "ai-monorepo",
   "scripts": {
-    "build": "turbo build --concurrency 21",
+    "build": "turbo build",
     "build:examples": "turbo --filter \"./examples/**\" --concurrency=100% build",
     "build:packages": "turbo --filter \"./packages/**\" --concurrency=100% build",
     "changeset": "changeset",
