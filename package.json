@@ -8,6 +8,8 @@
     "changeset": "changeset",
     "clean": "pnpm install && pnpm build:packages",
     "dev": "turbo dev --no-cache --concurrency 16 --continue",
+    "format:check": "pnpm prettier --check . && biome format",
+    "format": "prettier --write . && biome format --write",
     "lint": "turbo lint",
     "prepare": "husky install",
     "update-references": "update-ts-references",
