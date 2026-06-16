@@ -3,7 +3,7 @@
   "name": "ai-monorepo",
   "scripts": {
     "build": "turbo build --concurrency 21",
-    "build:examples": "turbo build --filter=@example/*",
+    "build:examples": "turbo --filter \"./examples/**\" --concurrency=100% build",
     "build:packages": "turbo --filter \"./packages/**\" --concurrency=100% build",
     "changeset": "changeset",
     "clean": "turbo clean",
