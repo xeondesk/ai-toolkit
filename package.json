@@ -33,7 +33,6 @@
     "@playwright/test": "^1.44.1",
     "del-cli": "^5.1.0",
     "eslint": "8.57.1",
-    "shx": "catalog:*",
     "eslint-config-khulnasoft-ai": "workspace:*",
     "husky": "^8.0.0",
     "lint-staged": "15.2.10",
