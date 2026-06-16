@@ -6,7 +6,7 @@
     "build:examples": "turbo --filter \"./examples/**\" --concurrency=100% build",
     "build:packages": "turbo --filter \"./packages/**\" --concurrency=100% build",
     "changeset": "changeset",
-    "clean": "turbo clean",
+    "clean:build": "pnpm clean && pnpm install && pnpm build:packages",
     "dev": "turbo dev --no-cache --concurrency 16 --continue",
     "lint": "turbo lint",
     "prepare": "husky install",
