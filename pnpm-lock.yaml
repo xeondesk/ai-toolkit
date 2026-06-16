@@ -3198,6 +3198,8 @@ importers:
         specifier: 5.8.3
         version: 5.8.3
 
+  tools/create-ai: {}
+
   tools/eslint-config:
     dependencies:
       eslint-config-next:
