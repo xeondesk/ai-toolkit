@@ -11,7 +11,7 @@
     "format:check": "pnpm prettier --check . && biome format",
     "format": "prettier --write . && biome format --write",
     "lint:check": "biome lint --diagnostic-level=error",
-    "lint": "turbo lint",
+    "lint:markdown": "remark --frail .",
     "lint:fix": "biome lint --write && pnpm eslint \"**/*.vue\" --fix",
     "prepare": "husky install",
     "update-references": "update-ts-references",
