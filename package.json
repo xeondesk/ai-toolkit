@@ -22,6 +22,8 @@
     "publint": "turbo publint",
     "test": "turbo --filter './packages/**' --filter './examples/**' --filter './tools/**' test",
     "types:check": "turbo types:check",
+    "types:check:raw": "pnpm run -r --parallel types:check",
+    "types:build": "turbo types:build",
     "test:update": "turbo test:update --concurrency 22 --filter=!@example/*",
     "ci:release": "turbo clean && turbo build && changeset publish",
     "ci:version": "changeset version && node .github/scripts/cleanup-examples-changesets.mjs && pnpm install --no-frozen-lockfile",
