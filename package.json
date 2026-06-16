@@ -21,6 +21,7 @@
     "publint": "turbo publint",
     "test": "turbo --filter './packages/**' --filter './examples/**' --filter './tools/**' test",
     "types:check": "turbo types:check && tsc --build",
+    "types:full": "tsc --build tsconfig.with-examples.json",
     "types:check:raw": "pnpm run -r --parallel types:check",
     "types:build": "turbo types:build",
     "test:update": "turbo test:update --concurrency 22 --filter=!@example/*",
