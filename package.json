@@ -4,9 +4,9 @@
   "scripts": {
     "build": "turbo build",
     "build:examples": "turbo --filter \"./examples/**\" --concurrency=100% build",
-    "build:packages": "turbo --filter \"./packages/**\" --concurrency=100% build",
+    "build:packages": "turbo --filter \"./packages/**\" build",
     "changeset": "changeset",
-    "clean": "pnpm install && pnpm build:packages",
+    "clean": "turbo clean",
     "dev": "turbo dev --no-cache --concurrency 16 --continue",
     "format:check": "pnpm prettier --check . && biome format",
     "format": "prettier --write . && biome format --write",
@@ -63,7 +63,7 @@
     "type": "git",
     "url": "git+https://github.com/khulnasoft/ai-toolkit.git"
   },
-  "license": "Apache License",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/khulnasoft/ai-toolkit/issues"
   },
