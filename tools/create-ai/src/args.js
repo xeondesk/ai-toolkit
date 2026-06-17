@@ -1,5 +1,3 @@
-const args = process.argv.slice(2);
-
 export function parseArgs(argv) {
   const options = {
     name: undefined,
