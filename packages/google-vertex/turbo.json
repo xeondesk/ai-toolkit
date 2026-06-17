@@ -5,6 +5,8 @@
   "tasks": {
     "build": {
       "dependsOn": [
+        "@ai-toolkit/anthropic#build",
+        "@ai-toolkit/google#build",
         "@ai-toolkit/provider#build",
         "@ai-toolkit/provider-utils#build"
       ],
