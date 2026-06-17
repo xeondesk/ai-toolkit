@@ -7,7 +7,6 @@
 dist
 dist-ssr
 dist-bundle-check
-apps/*/build
 examples/*/build
 node_modules
 public/dist

@@ -24,7 +24,7 @@
     "build": "pnpm clean && tsup --tsconfig tsconfig.build.json",
     "build:watch": "pnpm clean && tsup --watch --tsconfig tsconfig.build.json",
     "clean": "del-cli dist docs *.tsbuildinfo",
-    "prepack": "cp -r ../../apps/docs/content/docs ./docs",
+    "prepack": "cp -r ../../content/docs ./docs",
     "postpack": "del-cli docs",
     "lint": "eslint \"./**/*.ts*\"",
     "type-check": "tsc --build",
