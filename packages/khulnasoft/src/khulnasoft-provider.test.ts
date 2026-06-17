@@ -1,4 +1,4 @@
-import { createVercel } from './vercel-provider';
+import { createKhulnasoft } from './khulnasoft-provider';
 import { OpenAICompatibleChatLanguageModel } from '@ai-toolkit/openai-compatible';
 import { LanguageModelV3 } from '@ai-toolkit/provider';
 import { loadApiKey } from '@ai-toolkit/provider-utils';
@@ -21,11 +21,11 @@ vi.mock('@ai-toolkit/provider-utils', async () => {
   };
 });
 
-vi.mock('./vercel-image-model', () => ({
-  VercelImageModel: vi.fn(),
+vi.mock('./khulnasoft-image-model', () => ({
+  KhulnasoftImageModel: vi.fn(),
 }));
 
-describe('VercelProvider', () => {
+describe('KhulnasoftProvider', () => {
   let mockLanguageModel: LanguageModelV3;
 
   beforeEach(() => {
@@ -37,9 +37,9 @@ describe('VercelProvider', () => {
     vi.clearAllMocks();
   });
 
-  describe('createVercel', () => {
-    it('should create a VercelProvider instance with default options', () => {
-      const provider = createVercel();
+  describe('createKhulnasoft', () => {
+    it('should create a KhulnasoftProvider instance with default options', () => {
+      const provider = createKhulnasoft();
       provider('model-id');
 
       // Use the mocked version
@@ -50,18 +50,18 @@ describe('VercelProvider', () => {
 
       expect(loadApiKey).toHaveBeenCalledWith({
         apiKey: undefined,
-        environmentVariableName: 'VERCEL_API_KEY',
-        description: 'Vercel',
+        environmentVariableName: 'KHULNASOFT_API_KEY',
+        description: 'Khulnasoft',
       });
     });
 
-    it('should create a VercelProvider instance with custom options', () => {
+    it('should create a KhulnasoftProvider instance with custom options', () => {
       const options = {
         apiKey: 'custom-key',
         baseURL: 'https://custom.url',
         headers: { 'Custom-Header': 'value' },
       };
-      const provider = createVercel(options);
+      const provider = createKhulnasoft(options);
       provider('model-id');
 
       const constructorCall =
@@ -71,13 +71,13 @@ describe('VercelProvider', () => {
 
       expect(loadApiKey).toHaveBeenCalledWith({
         apiKey: 'custom-key',
-        environmentVariableName: 'VERCEL_API_KEY',
-        description: 'Vercel',
+        environmentVariableName: 'KHULNASOFT_API_KEY',
+        description: 'Khulnasoft',
       });
     });
 
     it('should return a chat model when called as a function', () => {
-      const provider = createVercel();
+      const provider = createKhulnasoft();
       const modelId = 'foo-model-id';
 
       const model = provider(modelId);
@@ -86,8 +86,8 @@ describe('VercelProvider', () => {
   });
 
   it('should construct a language model with correct configuration', () => {
-    const provider = createVercel();
-    const modelId = 'vercel-chat-model';
+    const provider = createKhulnasoft();
+    const modelId = 'khulnasoft-chat-model';
 
     const model = provider.languageModel(modelId);
 
@@ -95,7 +95,7 @@ describe('VercelProvider', () => {
     expect(OpenAICompatibleChatLanguageModelMock).toHaveBeenCalledWith(
       modelId,
       expect.objectContaining({
-        provider: 'vercel.chat',
+        provider: 'khulnasoft.chat',
       }),
     );
   });

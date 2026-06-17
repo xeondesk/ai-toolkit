@@ -1,11 +1,11 @@
-import { vercel } from '@ai-toolkit/khulnasoft';
+import { khulnasoft } from '@ai-toolkit/khulnasoft';
 import { generateText } from 'ai';
 import fs from 'node:fs';
 import { run } from '../lib/run';
 
 run(async () => {
   const result = await generateText({
-    model: vercel('v0-1.0-md'),
+    model: khulnasoft('v0-1.0-md'),
     messages: [
       {
         role: 'user',

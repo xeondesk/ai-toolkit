@@ -10,12 +10,12 @@ import {
   withoutTrailingSlash,
   withUserAgentSuffix,
 } from '@ai-toolkit/provider-utils';
-import { VercelChatModelId } from './vercel-chat-options';
+import { KhulnasoftChatModelId } from './khulnasoft-chat-options';
 import { VERSION } from './version';
 
-export interface VercelProviderSettings {
+export interface KhulnasoftProviderSettings {
   /**
-Vercel API key.
+Khulnasoft API key.
 */
   apiKey?: string;
   /**
@@ -33,16 +33,16 @@ or to provide a custom fetch implementation for e.g. testing.
   fetch?: FetchFunction;
 }
 
-export interface VercelProvider extends ProviderV3 {
+export interface KhulnasoftProvider extends ProviderV3 {
   /**
 Creates a model for text generation.
 */
-  (modelId: VercelChatModelId): LanguageModelV3;
+  (modelId: KhulnasoftChatModelId): LanguageModelV3;
 
   /**
 Creates a language model for text generation.
 */
-  languageModel(modelId: VercelChatModelId): LanguageModelV3;
+  languageModel(modelId: KhulnasoftChatModelId): LanguageModelV3;
 
   /**
    * @deprecated Use `embeddingModel` instead.
@@ -50,9 +50,9 @@ Creates a language model for text generation.
   textEmbeddingModel(modelId: string): never;
 }
 
-export function createVercel(
-  options: VercelProviderSettings = {},
-): VercelProvider {
+export function createKhulnasoft(
+  options: KhulnasoftProviderSettings = {},
+): KhulnasoftProvider {
   const baseURL = withoutTrailingSlash(
     options.baseURL ?? 'https://api.v0.dev/v1',
   );
@@ -61,8 +61,8 @@ export function createVercel(
       {
         Authorization: `Bearer ${loadApiKey({
           apiKey: options.apiKey,
-          environmentVariableName: 'VERCEL_API_KEY',
-          description: 'Vercel',
+          environmentVariableName: 'KHULNASOFT_API_KEY',
+          description: 'Khulnasoft',
         })}`,
         ...options.headers,
       },
@@ -77,19 +77,19 @@ export function createVercel(
   }
 
   const getCommonModelConfig = (modelType: string): CommonModelConfig => ({
-    provider: `vercel.${modelType}`,
+    provider: `khulnasoft.${modelType}`,
     url: ({ path }) => `${baseURL}${path}`,
     headers: getHeaders,
     fetch: options.fetch,
   });
 
-  const createChatModel = (modelId: VercelChatModelId) => {
+  const createChatModel = (modelId: KhulnasoftChatModelId) => {
     return new OpenAICompatibleChatLanguageModel(modelId, {
       ...getCommonModelConfig('chat'),
     });
   };
 
-  const provider = (modelId: VercelChatModelId) => createChatModel(modelId);
+  const provider = (modelId: KhulnasoftChatModelId) => createChatModel(modelId);
 
   provider.specificationVersion = 'v3' as const;
   provider.languageModel = createChatModel;
@@ -104,4 +104,4 @@ export function createVercel(
   return provider;
 }
 
-export const vercel = createVercel();
+export const khulnasoft = createKhulnasoft();
