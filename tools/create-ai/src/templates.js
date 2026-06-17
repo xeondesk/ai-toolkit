@@ -147,11 +147,11 @@ export async function generateCompletion(prompt: string) {
   },
 };
 
-export function getTemplate(name: string) {
+export function getTemplate(name) {
   return templates[name] || templates['next-react'];
 }
 
-export function getProvider(name: string) {
+export function getProvider(name) {
   return providers[name] || providers.openai;
 }
 
