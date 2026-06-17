@@ -1,11 +1,11 @@
-import { khulnasoft } from '@ai-toolkit/khulnasoft';
+import { vercel } from '@ai-toolkit/khulnasoft';
 import { streamText } from 'ai';
 import fs from 'node:fs';
 import { run } from '../lib/run';
 
 run(async () => {
   const result = streamText({
-    model: khulnasoft('v0-1.0-md'),
+    model: vercel('v0-1.0-md'),
     messages: [
       {
         role: 'user',

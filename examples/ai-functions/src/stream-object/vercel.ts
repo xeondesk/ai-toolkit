@@ -1,11 +1,11 @@
-import { khulnasoft } from '@ai-toolkit/khulnasoft';
+import { vercel } from '@ai-toolkit/khulnasoft';
 import { streamObject } from 'ai';
 import { z } from 'zod';
 import { run } from '../lib/run';
 
 run(async () => {
   const result = streamObject({
-    model: khulnasoft('v0-1.5-md'),
+    model: vercel('v0-1.5-md'),
     schema: z.object({
       button: z.object({
         element: z.string(),

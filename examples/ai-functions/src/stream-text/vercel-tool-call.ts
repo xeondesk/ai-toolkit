@@ -1,4 +1,4 @@
-import { khulnasoft } from '@ai-toolkit/khulnasoft';
+import { vercel } from '@ai-toolkit/khulnasoft';
 import { streamText, ToolCallPart, ToolResultPart, ModelMessage } from 'ai';
 import { weatherTool } from '../tools/weather-tool';
 import { run } from '../lib/run';
@@ -9,7 +9,7 @@ run(async () => {
   let toolResponseAvailable = false;
 
   const result = streamText({
-    model: khulnasoft('v0-1.0-md'),
+    model: vercel('v0-1.0-md'),
     tools: {
       weather: weatherTool,
     },

@@ -13,7 +13,7 @@
     "internal.d.ts"
   ],
   "scripts": {
-    "build": "pnpm clean && tsup --tsconfig tsconfig.build.json && GOOGLE_BUILD_INTERNAL=true tsup --tsconfig tsconfig.build.json",
+    "build": "pnpm clean && tsup --tsconfig tsconfig.build.json",
     "build:watch": "pnpm clean && tsup --watch",
     "clean": "del-cli dist *.tsbuildinfo",
     "lint": "eslint \"./**/*.ts*\"",

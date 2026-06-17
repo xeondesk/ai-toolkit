@@ -1,10 +1,10 @@
-import { khulnasoft } from '@ai-toolkit/khulnasoft';
+import { vercel } from '@ai-toolkit/khulnasoft';
 import { streamText } from 'ai';
 import { run } from '../lib/run';
 
 run(async () => {
   const result = streamText({
-    model: khulnasoft('v0-1.5-md'),
+    model: vercel('v0-1.5-md'),
     prompt: 'Implement Fibonacci in Lua.',
   });
 
