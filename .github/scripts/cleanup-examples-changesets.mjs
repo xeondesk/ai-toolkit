@@ -6,12 +6,20 @@
  * Source: https://github.com/TooTallNate/nx.js/blob/main/.github/scripts/cleanup-examples.mjs
  */
 
-import { readFileSync, writeFileSync, unlinkSync, readdirSync, statSync } from 'node:fs';
+import {
+  readFileSync,
+  writeFileSync,
+  unlinkSync,
+  readdirSync,
+  statSync,
+} from 'node:fs';
 import { fileURLToPath } from 'url';
-import { join } from 'path';
+import { dirname, join } from 'path';
 
-function cleanup(app, url) {
-  const appPath = join(fileURLToPath(url), app);
+const here = dirname(fileURLToPath(import.meta.url));
+
+function cleanup(app, dirPath) {
+  const appPath = join(dirPath, app);
 
   console.log('Cleaning up', appPath);
 
@@ -22,20 +30,24 @@ function cleanup(app, url) {
     writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2) + '\n');
 
     try {
-      const changelogUrl = new URL(`examples/${app}/CHANGELOG.md`, url);
-      console.log('Deleting', changelogUrl);
-      unlinkSync(changelogUrl);
+      const changelogPath = join(appPath, 'CHANGELOG.md');
+      console.log('Deleting', changelogPath);
+      unlinkSync(changelogPath);
     } catch (err) {
       if (err.code !== 'ENOENT') throw err;
     }
   }
 }
 
-// examples
-const examplesUrl = new URL('../../examples', import.meta.url);
-for (const app of readdirSync(fileURLToPath(examplesUrl))) {
-  cleanup(app, examplesUrl);
+// examples (organized into category subdirectories: examples/<category>/<example>)
+const examplesPath = join(here, '../../examples');
+for (const category of readdirSync(examplesPath)) {
+  const categoryPath = join(examplesPath, category);
+  if (!statSync(categoryPath).isDirectory()) continue;
+  for (const app of readdirSync(categoryPath)) {
+    cleanup(app, categoryPath);
+  }
 }
 
-// next test server
-cleanup('.', new URL('../../packages/rsc/tests/e2e/next-server', import.meta.url));
+// next test server (moved to packages/adapters/rsc during Phase 1)
+cleanup('.', join(here, '../../packages/adapters/rsc/tests/e2e/next-server'));
