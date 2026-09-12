@@ -17,14 +17,18 @@
     "stripInternal": true,
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
-    "lib": ["esnext", "dom", "dom.iterable"],
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
     "types": [],
     "rootDir": "src",
     "outDir": "dist"
   },
   "references": [
     {
-      "path": "../../core/ai"
+      "path": "../../core/ai-toolkit"
     },
     {
       "path": "../../core/provider-utils"
@@ -33,6 +37,15 @@
       "path": "../../infrastructure/test-server"
     }
   ],
-  "include": ["./src/**/*.js", "./src/**/*.ts", "./src/**/*.svelte"],
-  "exclude": ["dist", "build", "node_modules", "tsup.config.ts"]
+  "include": [
+    "./src/**/*.js",
+    "./src/**/*.ts",
+    "./src/**/*.svelte"
+  ],
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules",
+    "tsup.config.ts"
+  ]
 }

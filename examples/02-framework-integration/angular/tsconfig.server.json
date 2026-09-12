@@ -18,7 +18,7 @@
   "include": ["src/server.ts"],
   "references": [
     {
-      "path": "../../../packages/core/ai"
+      "path": "../../../packages/core/ai-toolkit"
     },
     {
       "path": "../../../packages/providers/openai"

@@ -6,6 +6,7 @@ import {
   TopModelsTable,
 } from '@/components/overview-tables';
 import { OverviewLive } from '@/components/overview-live';
+import { OverviewAnalytics } from '@/components/overview-analytics';
 import { PageHeader } from '@/components/page-header';
 import { Panel } from '@ai-toolkit/design/panel';
 import { Section } from '@ai-toolkit/design/section';
@@ -59,6 +60,10 @@ export default async function OverviewPage() {
       />
 
       <OverviewLive fallback={fallback} counts={counts} />
+
+      <Section title="Platform activity">
+        <OverviewAnalytics />
+      </Section>
 
       <Section title="Distribution">
         <div className="grid gap-4 lg:grid-cols-2">

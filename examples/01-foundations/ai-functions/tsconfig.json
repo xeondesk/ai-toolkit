@@ -4,9 +4,14 @@
     "declaration": true,
     "sourceMap": true,
     "target": "es2022",
-    "lib": ["es2022", "dom"],
+    "lib": [
+      "es2022",
+      "dom"
+    ],
     "module": "esnext",
-    "types": ["node"],
+    "types": [
+      "node"
+    ],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "Bundler",
@@ -15,10 +20,12 @@
     "skipLibCheck": true,
     "composite": true
   },
-  "include": ["src/**/*.ts"],
+  "include": [
+    "src/**/*.ts"
+  ],
   "references": [
     {
-      "path": "../../../packages/core/ai"
+      "path": "../../../packages/core/ai-toolkit"
     },
     {
       "path": "../../../packages/mcp"
@@ -40,6 +47,9 @@
     },
     {
       "path": "../../../packages/providers/black-forest-labs"
+    },
+    {
+      "path": "../../../packages/providers/bytedance"
     },
     {
       "path": "../../../packages/providers/cerebras"

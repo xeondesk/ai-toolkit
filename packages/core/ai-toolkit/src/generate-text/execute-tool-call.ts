@@ -111,10 +111,7 @@ export async function executeToolCall<TOOLS extends ToolSet>({
     const toolTimeoutMs = getToolTimeoutMs(timeout, toolName);
     const toolAbortSignal =
       toolTimeoutMs != null
-        ? mergeAbortSignals(
-            abortSignal,
-            AbortSignal.timeout(toolTimeoutMs),
-          )
+        ? mergeAbortSignals(abortSignal, AbortSignal.timeout(toolTimeoutMs))
         : abortSignal;
 
     const startTimeMs = now();

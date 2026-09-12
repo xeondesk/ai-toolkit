@@ -8,7 +8,10 @@ import type {
   ToolExecutionOptions as ToolExecutionOptionsType,
 } from './tool-execute-function';
 
-export type { ToolExecuteFunction, ToolExecutionOptions } from './tool-execute-function';
+export type {
+  ToolExecuteFunction,
+  ToolExecutionOptions,
+} from './tool-execute-function';
 
 /**
  * Function that is called to determine if the tool needs approval before it can be executed.
@@ -120,7 +123,9 @@ functionality that can be fully encapsulated in the provider.
   /**
    * Whether the tool needs approval before it can be executed.
    */
-  needsApproval?: boolean | ToolNeedsApprovalFunction<[INPUT] extends [never] ? unknown : INPUT>;
+  needsApproval?:
+    | boolean
+    | ToolNeedsApprovalFunction<[INPUT] extends [never] ? unknown : INPUT>;
 
   /**
    * Strict mode setting for the tool.
@@ -135,7 +140,9 @@ functionality that can be fully encapsulated in the provider.
    * Optional function that is called when the argument streaming starts.
    * Only called when the tool is used in a streaming context.
    */
-  onInputStart?: (options: ToolExecutionOptionsType) => void | PromiseLike<void>;
+  onInputStart?: (
+    options: ToolExecutionOptionsType,
+  ) => void | PromiseLike<void>;
 
   /**
    * Optional function that is called when an argument streaming delta is available.
@@ -174,7 +181,11 @@ functionality that can be fully encapsulated in the provider.
       /**
        * The output of the tool call.
        */
-      output: 0 extends 1 & OUTPUT ? any : [OUTPUT] extends [never] ? any : NoInfer<OUTPUT>;
+      output: 0 extends 1 & OUTPUT
+        ? any
+        : [OUTPUT] extends [never]
+          ? any
+          : NoInfer<OUTPUT>;
     }) => ToolResultOutput | PromiseLike<ToolResultOutput>;
   } & (
     | {
@@ -219,16 +230,16 @@ The arguments for configuring the tool. Must match the expected arguments define
          *
          * @default false
          */
-         supportsDeferredResults?: boolean;
+        supportsDeferredResults?: boolean;
 
-         /**
-          * Whether the tool is executed by the provider (`true`) or by the
-          * client (`false`). Client-executed provider-defined tools still
-          * carry provider-defined schemas and args.
-          */
-         isProviderExecuted?: boolean;
-       }
-   );
+        /**
+         * Whether the tool is executed by the provider (`true`) or by the
+         * client (`false`). Client-executed provider-defined tools still
+         * carry provider-defined schemas and args.
+         */
+        isProviderExecuted?: boolean;
+      }
+  );
 
 /**
  * A tool with provider-defined input and output schemas.
@@ -257,14 +268,14 @@ export type ProviderExecutedTool<
 /**
  * Infer the input type of a tool.
  */
-export type InferToolInput<TOOL extends Tool> = TOOL extends Tool<infer INPUT, any> ? INPUT : never;
+export type InferToolInput<TOOL extends Tool> =
+  TOOL extends Tool<infer INPUT, any> ? INPUT : never;
 
 /**
  * Infer the output type of a tool.
  */
-export type InferToolOutput<TOOL extends Tool> = TOOL extends Tool<any, infer OUTPUT>
-  ? OUTPUT
-  : never;
+export type InferToolOutput<TOOL extends Tool> =
+  TOOL extends Tool<any, infer OUTPUT> ? OUTPUT : never;
 
 /**
 Helper function for inferring the execute args of a tool.
@@ -281,26 +292,26 @@ Helper function for inferring the execute args of a tool.
 // Inference collects input from `inputSchema`, output from
 // `execute`/`outputSchema`, and context from `contextSchema`; the return
 // type is the precise `Tool`.
-export function tool<INPUT, OUTPUT = never, CONTEXT = never>(
-  tool: {
-    description?: Tool<INPUT, OUTPUT, CONTEXT>['description'];
-    title?: Tool<INPUT, OUTPUT, CONTEXT>['title'];
-    providerOptions?: Tool<INPUT, OUTPUT, CONTEXT>['providerOptions'];
-    inputSchema: FlexibleSchema<INPUT>;
-    inputExamples?: Tool<INPUT, OUTPUT, CONTEXT>['inputExamples'];
-    contextSchema: FlexibleSchema<CONTEXT>;
-    needsApproval?: Tool<INPUT, OUTPUT, CONTEXT>['needsApproval'];
-    strict?: Tool<INPUT, OUTPUT, CONTEXT>['strict'];
-    onInputStart?: Tool<INPUT, OUTPUT, CONTEXT>['onInputStart'];
-    onInputDelta?: Tool<INPUT, OUTPUT, CONTEXT>['onInputDelta'];
-    onInputAvailable?: Tool<INPUT, OUTPUT, CONTEXT>['onInputAvailable'];
-    toModelOutput?: Tool<INPUT, OUTPUT, CONTEXT>['toModelOutput'];
-    type?: undefined | 'function';
-    execute?: ToolExecuteFunctionType<INPUT, OUTPUT, CONTEXT>;
-    outputSchema?: FlexibleSchema<OUTPUT>;
-  },
-): Tool<INPUT, OUTPUT, CONTEXT>;
-export function tool<INPUT, OUTPUT>(tool: Tool<INPUT, OUTPUT>): Tool<INPUT, OUTPUT>;
+export function tool<INPUT, OUTPUT = never, CONTEXT = never>(tool: {
+  description?: Tool<INPUT, OUTPUT, CONTEXT>['description'];
+  title?: Tool<INPUT, OUTPUT, CONTEXT>['title'];
+  providerOptions?: Tool<INPUT, OUTPUT, CONTEXT>['providerOptions'];
+  inputSchema: FlexibleSchema<INPUT>;
+  inputExamples?: Tool<INPUT, OUTPUT, CONTEXT>['inputExamples'];
+  contextSchema: FlexibleSchema<CONTEXT>;
+  needsApproval?: Tool<INPUT, OUTPUT, CONTEXT>['needsApproval'];
+  strict?: Tool<INPUT, OUTPUT, CONTEXT>['strict'];
+  onInputStart?: Tool<INPUT, OUTPUT, CONTEXT>['onInputStart'];
+  onInputDelta?: Tool<INPUT, OUTPUT, CONTEXT>['onInputDelta'];
+  onInputAvailable?: Tool<INPUT, OUTPUT, CONTEXT>['onInputAvailable'];
+  toModelOutput?: Tool<INPUT, OUTPUT, CONTEXT>['toModelOutput'];
+  type?: undefined | 'function';
+  execute?: ToolExecuteFunctionType<INPUT, OUTPUT, CONTEXT>;
+  outputSchema?: FlexibleSchema<OUTPUT>;
+}): Tool<INPUT, OUTPUT, CONTEXT>;
+export function tool<INPUT, OUTPUT>(
+  tool: Tool<INPUT, OUTPUT>,
+): Tool<INPUT, OUTPUT>;
 export function tool<INPUT>(tool: Tool<INPUT, never>): Tool<INPUT, never>;
 export function tool<OUTPUT>(tool: Tool<never, OUTPUT>): Tool<never, OUTPUT>;
 export function tool(tool: Tool<never, never>): Tool<never, never>;
