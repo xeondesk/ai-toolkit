@@ -21,7 +21,15 @@ const ROOT = path.resolve(__dirname, '../..');
 const OUT_DIR = path.join(ROOT, 'build');
 const OUT_FILE = path.join(OUT_DIR, 'inventory.json');
 
-const DOMAINS = ['core', 'providers', 'adapters', 'mcp', 'special', 'validation', 'infrastructure'];
+const DOMAINS = [
+  'core',
+  'providers',
+  'adapters',
+  'mcp',
+  'special',
+  'validation',
+  'infrastructure',
+];
 const PRUNE = new Set([
   'node_modules',
   '.git',
@@ -81,7 +89,9 @@ function readJson(file) {
   try {
     return JSON.parse(fs.readFileSync(file, 'utf8'));
   } catch (error) {
-    console.error(`  ! invalid JSON: ${path.relative(ROOT, file)} (${error.message})`);
+    console.error(
+      `  ! invalid JSON: ${path.relative(ROOT, file)} (${error.message})`,
+    );
     return null;
   }
 }
@@ -150,13 +160,18 @@ function analyzeRuntimeAssumptions(pkgDir) {
         } catch {
           continue;
         }
-        for (const m of content.matchAll(/from\s+['"]((?:node:)?[a-zA-Z0-9_@/-]+)['"]/g)) {
+        for (const m of content.matchAll(
+          /from\s+['"]((?:node:)?[a-zA-Z0-9_@/-]+)['"]/g,
+        )) {
           const spec = m[1];
           if (spec.startsWith('node:') || builtinModules.includes(spec)) {
-            assumptions.nodeBuiltins.add(spec.startsWith('node:') ? spec : `node:${spec}`);
+            assumptions.nodeBuiltins.add(
+              spec.startsWith('node:') ? spec : `node:${spec}`,
+            );
           }
         }
-        if (/globalThis\.fetch\b/.test(content)) assumptions.usesGlobalFetch = true;
+        if (/globalThis\.fetch\b/.test(content))
+          assumptions.usesGlobalFetch = true;
       }
     }
   };
@@ -183,7 +198,8 @@ function main() {
     regex: globToRegex(glob),
   }));
 
-  const candidateDirs = walk(path.join(ROOT, 'packages'))
+  const candidateDirs = [path.join(ROOT, 'apps')]
+    .concat(walk(path.join(ROOT, 'packages')))
     .concat(walk(path.join(ROOT, 'tools')))
     .concat(walk(path.join(ROOT, 'examples')))
     .concat(walk(path.join(ROOT, 'apps')));
@@ -194,7 +210,9 @@ function main() {
 
   for (const dir of candidateDirs) {
     const rel = path.relative(ROOT, dir).split(path.sep).join('/');
-    const matchedGlobs = regexes.filter(({ regex }) => regex.test(rel)).map(({ glob }) => glob);
+    const matchedGlobs = regexes
+      .filter(({ regex }) => regex.test(rel))
+      .map(({ glob }) => glob);
     if (matchedGlobs.length === 0) continue;
 
     const manifest = readJson(path.join(dir, 'package.json'));
@@ -263,7 +281,9 @@ function main() {
     try {
       committed = JSON.parse(fs.readFileSync(OUT_FILE, 'utf8'));
     } catch {
-      console.error(`Missing committed inventory: ${path.relative(ROOT, OUT_FILE)}`);
+      console.error(
+        `Missing committed inventory: ${path.relative(ROOT, OUT_FILE)}`,
+      );
       process.exit(1);
     }
     const same =
@@ -293,13 +313,18 @@ function main() {
     console.log(`  ${domain}: ${names.length} (${names.join(', ')})`);
   }
   const withoutSource = enriched.filter(pkg => !pkg.source);
-  const nodeImporters = enriched.filter(pkg => pkg.runtimeAssumptions.nodeBuiltins.length > 0);
+  const nodeImporters = enriched.filter(
+    pkg => pkg.runtimeAssumptions.nodeBuiltins.length > 0,
+  );
   const coreNodeImports = enriched.filter(
-    pkg => pkg.domain === 'core' && pkg.runtimeAssumptions.nodeBuiltins.length > 0,
+    pkg =>
+      pkg.domain === 'core' && pkg.runtimeAssumptions.nodeBuiltins.length > 0,
   );
   console.log(`\nPackages without source entry: ${withoutSource.length}`);
   console.log(`Packages importing Node builtins: ${nodeImporters.length}`);
-  console.log(`Core packages importing Node builtins: ${coreNodeImports.length}`);
+  console.log(
+    `Core packages importing Node builtins: ${coreNodeImports.length}`,
+  );
   console.log(`\nWrote ${path.relative(ROOT, OUT_FILE)}`);
 }
 

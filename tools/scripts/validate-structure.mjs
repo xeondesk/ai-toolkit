@@ -120,6 +120,12 @@ function scanNodeImports(dir, out = new Set()) {
 
 function collectPackageNames(root, category) {
   if (!fs.existsSync(root)) return;
+  const rootManifestPath = path.join(root, 'package.json');
+  if (fs.existsSync(rootManifestPath)) {
+    const manifest = readJson(rootManifestPath);
+    if (manifest?.name)
+      discoveredNames.set(manifest.name, { category, dir: root });
+  }
   const walk = dir => {
     let entries;
     try {
@@ -237,9 +243,13 @@ for (const pkg of packages) {
     );
 
   if (!pkg.manifest.stability)
-    reportError(`Package missing stability label: ${path.relative(ROOT, pkg.dir)}`);
+    reportError(
+      `Package missing stability label: ${path.relative(ROOT, pkg.dir)}`,
+    );
   if (!pkg.manifest.owners)
-    reportError(`Package missing owners metadata: ${path.relative(ROOT, pkg.dir)}`);
+    reportError(
+      `Package missing owners metadata: ${path.relative(ROOT, pkg.dir)}`,
+    );
 
   const relDir = path.relative(ROOT, pkg.dir).split(path.sep).join('/');
   const inWorkspace = WORKSPACE_REGEXES.some(({ regex }) => regex.test(relDir));

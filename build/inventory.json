@@ -1,6 +1,491 @@
 {
-  "generatedAt": "2026-09-06T23:35:15.861Z",
+  "generatedAt": "2026-09-12T02:41:46.926Z",
   "packages": [
+    {
+      "name": "@ai-toolkit/apps",
+      "dir": "apps",
+      "domain": "apps",
+      "workspaceGlobs": [
+        "apps"
+      ],
+      "version": "0.0.0",
+      "private": true,
+      "source": null,
+      "main": null,
+      "module": null,
+      "types": null,
+      "exports": [],
+      "conditions": [],
+      "publicApi": [],
+      "dependencies": [
+        {
+          "name": "@ai-sdk/react",
+          "version": "^3.0.134",
+          "kind": "external"
+        },
+        {
+          "name": "@ai-toolkit/ai-docs",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/react",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/design",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@icons-pack/react-simple-icons",
+          "version": "^13.8.0",
+          "kind": "external"
+        },
+        {
+          "name": "@orama/tokenizers",
+          "version": "^3.1.16",
+          "kind": "external"
+        },
+        {
+          "name": "@streamdown/cjk",
+          "version": "^1.0.1",
+          "kind": "external"
+        },
+        {
+          "name": "@streamdown/code",
+          "version": "^1.0.1",
+          "kind": "external"
+        },
+        {
+          "name": "@vercel/agent-readability",
+          "version": "^0.7.0",
+          "kind": "external"
+        },
+        {
+          "name": "@vercel/analytics",
+          "version": "^1.6.1",
+          "kind": "external"
+        },
+        {
+          "name": "@vercel/speed-insights",
+          "version": "^1.3.1",
+          "kind": "external"
+        },
+        {
+          "name": "ai",
+          "version": "^6.0.132",
+          "kind": "external"
+        },
+        {
+          "name": "ai-toolkit",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "class-variance-authority",
+          "version": "^0.7.1",
+          "kind": "external"
+        },
+        {
+          "name": "clsx",
+          "version": "^2.1.1",
+          "kind": "external"
+        },
+        {
+          "name": "cmdk",
+          "version": "^1.1.1",
+          "kind": "external"
+        },
+        {
+          "name": "dexie",
+          "version": "^4.2.1",
+          "kind": "external"
+        },
+        {
+          "name": "dexie-react-hooks",
+          "version": "^4.2.0",
+          "kind": "external"
+        },
+        {
+          "name": "feed",
+          "version": "^5.1.0",
+          "kind": "external"
+        },
+        {
+          "name": "fumadocs-core",
+          "version": "16.2.2",
+          "kind": "external"
+        },
+        {
+          "name": "fumadocs-mdx",
+          "version": "14.0.4",
+          "kind": "external"
+        },
+        {
+          "name": "fumadocs-ui",
+          "version": "16.2.2",
+          "kind": "external"
+        },
+        {
+          "name": "geist",
+          "version": "^1.7.1",
+          "kind": "external"
+        },
+        {
+          "name": "jotai",
+          "version": "^2.15.2",
+          "kind": "external"
+        },
+        {
+          "name": "lucide-react",
+          "version": "^0.555.0",
+          "kind": "external"
+        },
+        {
+          "name": "mermaid",
+          "version": "^11.12.2",
+          "kind": "external"
+        },
+        {
+          "name": "motion",
+          "version": "^12.23.25",
+          "kind": "external"
+        },
+        {
+          "name": "nanoid",
+          "version": "^5.1.6",
+          "kind": "external"
+        },
+        {
+          "name": "next",
+          "version": "16.3.3",
+          "kind": "external"
+        },
+        {
+          "name": "next-themes",
+          "version": "^0.4.6",
+          "kind": "external"
+        },
+        {
+          "name": "radix-ui",
+          "version": "1.6.4",
+          "kind": "external"
+        },
+        {
+          "name": "react",
+          "version": "^19.2.3",
+          "kind": "external"
+        },
+        {
+          "name": "react-dom",
+          "version": "^19.2.3",
+          "kind": "external"
+        },
+        {
+          "name": "react-player",
+          "version": "^3.4.0",
+          "kind": "external"
+        },
+        {
+          "name": "shiki",
+          "version": "3.19.0",
+          "kind": "external"
+        },
+        {
+          "name": "sonner",
+          "version": "^2.0.7",
+          "kind": "external"
+        },
+        {
+          "name": "streamdown",
+          "version": "^2.1.0",
+          "kind": "external"
+        },
+        {
+          "name": "tailwind-merge",
+          "version": "^3.4.0",
+          "kind": "external"
+        },
+        {
+          "name": "use-stick-to-bottom",
+          "version": "^1.1.1",
+          "kind": "external"
+        },
+        {
+          "name": "vaul",
+          "version": "^1.1.2",
+          "kind": "external"
+        },
+        {
+          "name": "zod",
+          "version": "^4.1.13",
+          "kind": "external"
+        }
+      ],
+      "runtimeAssumptions": {
+        "nodeBuiltins": [
+          "node:child_process",
+          "node:fs",
+          "node:fs/promises",
+          "node:os",
+          "node:path",
+          "node:url"
+        ],
+        "usesGlobalFetch": false
+      },
+      "stability": null,
+      "owners": null,
+      "dependencyEdges": [
+        {
+          "name": "@ai-sdk/react",
+          "version": "^3.0.134",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "@ai-toolkit/ai-docs",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-special"
+        },
+        {
+          "name": "@ai-toolkit/react",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-adapters"
+        },
+        {
+          "name": "@ai-toolkit/design",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-legacy"
+        },
+        {
+          "name": "@icons-pack/react-simple-icons",
+          "version": "^13.8.0",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "@orama/tokenizers",
+          "version": "^3.1.16",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "@streamdown/cjk",
+          "version": "^1.0.1",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "@streamdown/code",
+          "version": "^1.0.1",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "@vercel/agent-readability",
+          "version": "^0.7.0",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "@vercel/analytics",
+          "version": "^1.6.1",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "@vercel/speed-insights",
+          "version": "^1.3.1",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "ai",
+          "version": "^6.0.132",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "ai-toolkit",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-core"
+        },
+        {
+          "name": "class-variance-authority",
+          "version": "^0.7.1",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "clsx",
+          "version": "^2.1.1",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "cmdk",
+          "version": "^1.1.1",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "dexie",
+          "version": "^4.2.1",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "dexie-react-hooks",
+          "version": "^4.2.0",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "feed",
+          "version": "^5.1.0",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "fumadocs-core",
+          "version": "16.2.2",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "fumadocs-mdx",
+          "version": "14.0.4",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "fumadocs-ui",
+          "version": "16.2.2",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "geist",
+          "version": "^1.7.1",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "jotai",
+          "version": "^2.15.2",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "lucide-react",
+          "version": "^0.555.0",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "mermaid",
+          "version": "^11.12.2",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "motion",
+          "version": "^12.23.25",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "nanoid",
+          "version": "^5.1.6",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "next",
+          "version": "16.3.3",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "next-themes",
+          "version": "^0.4.6",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "radix-ui",
+          "version": "1.6.4",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "react",
+          "version": "^19.2.3",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "react-dom",
+          "version": "^19.2.3",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "react-player",
+          "version": "^3.4.0",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "shiki",
+          "version": "3.19.0",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "sonner",
+          "version": "^2.0.7",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "streamdown",
+          "version": "^2.1.0",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "tailwind-merge",
+          "version": "^3.4.0",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "use-stick-to-bottom",
+          "version": "^1.1.1",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "vaul",
+          "version": "^1.1.2",
+          "kind": "external",
+          "direction": "external"
+        },
+        {
+          "name": "zod",
+          "version": "^4.1.13",
+          "kind": "external",
+          "direction": "external"
+        }
+      ]
+    },
     {
       "name": "@ai-toolkit/angular",
       "dir": "packages/adapters/angular",
@@ -628,76 +1113,6 @@
         {
           "name": "vue",
           "version": "^3.3.4",
-          "kind": "external",
-          "direction": "external"
-        }
-      ]
-    },
-    {
-      "name": "@ai-toolkit/ai",
-      "dir": "packages/core/ai",
-      "domain": "core",
-      "workspaceGlobs": [
-        "packages/core/*"
-      ],
-      "version": "2.0.0",
-      "private": false,
-      "source": "./src/index.ts",
-      "main": "./dist/index.js",
-      "module": "./dist/index.mjs",
-      "types": "./dist/index.d.ts",
-      "exports": [
-        "./package.json",
-        ".",
-        "./internal",
-        "./test"
-      ],
-      "conditions": [
-        "default",
-        "import",
-        "module",
-        "require",
-        "types"
-      ],
-      "publicApi": [
-        "./package.json",
-        ".",
-        "./internal",
-        "./test"
-      ],
-      "dependencies": [
-        {
-          "name": "ai-toolkit",
-          "version": "workspace:*",
-          "kind": "workspace"
-        },
-        {
-          "name": "zod",
-          "version": "^3.25.76 || ^4.1.8",
-          "kind": "external"
-        }
-      ],
-      "runtimeAssumptions": {
-        "nodeBuiltins": [
-          "node:fs",
-          "node:path"
-        ],
-        "usesGlobalFetch": false
-      },
-      "stability": "stable",
-      "owners": [
-        "@khulnasoft/ai-toolkit-core"
-      ],
-      "dependencyEdges": [
-        {
-          "name": "ai-toolkit",
-          "version": "workspace:*",
-          "kind": "workspace",
-          "direction": "to-core"
-        },
-        {
-          "name": "zod",
-          "version": "^3.25.76 || ^4.1.8",
           "kind": "external",
           "direction": "external"
         }
@@ -2652,6 +3067,729 @@
         "@khulnasoft/ai-toolkit-providers"
       ],
       "dependencyEdges": [
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-validation"
+        },
+        {
+          "name": "@ai-toolkit/provider-utils",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-core"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external",
+          "direction": "external"
+        }
+      ]
+    },
+    {
+      "name": "@ai-toolkit/harness",
+      "dir": "packages/providers/harness",
+      "domain": "providers",
+      "workspaceGlobs": [
+        "packages/providers/*"
+      ],
+      "version": "0.0.0",
+      "private": false,
+      "source": "./src/index.ts",
+      "main": "./dist/index.js",
+      "module": "./dist/index.mjs",
+      "types": "./dist/index.d.ts",
+      "exports": [
+        "./package.json",
+        "."
+      ],
+      "conditions": [
+        "default",
+        "import",
+        "require",
+        "types"
+      ],
+      "publicApi": [
+        "./package.json",
+        "."
+      ],
+      "dependencies": [
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external"
+        }
+      ],
+      "runtimeAssumptions": {
+        "nodeBuiltins": [],
+        "usesGlobalFetch": false
+      },
+      "stability": "alpha",
+      "owners": [
+        "@khulnasoft/ai-toolkit-providers"
+      ],
+      "dependencyEdges": [
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-validation"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external",
+          "direction": "external"
+        }
+      ]
+    },
+    {
+      "name": "@ai-toolkit/harness-acp",
+      "dir": "packages/providers/harness-acp",
+      "domain": "providers",
+      "workspaceGlobs": [
+        "packages/providers/*"
+      ],
+      "version": "0.0.0",
+      "private": false,
+      "source": "./src/index.ts",
+      "main": "./dist/index.js",
+      "module": "./dist/index.mjs",
+      "types": "./dist/index.d.ts",
+      "exports": [
+        "./package.json",
+        "."
+      ],
+      "conditions": [
+        "default",
+        "import",
+        "require",
+        "types"
+      ],
+      "publicApi": [
+        "./package.json",
+        "."
+      ],
+      "dependencies": [
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/provider-utils",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external"
+        }
+      ],
+      "runtimeAssumptions": {
+        "nodeBuiltins": [],
+        "usesGlobalFetch": false
+      },
+      "stability": "alpha",
+      "owners": [
+        "@khulnasoft/ai-toolkit-providers"
+      ],
+      "dependencyEdges": [
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-validation"
+        },
+        {
+          "name": "@ai-toolkit/provider-utils",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-core"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external",
+          "direction": "external"
+        }
+      ]
+    },
+    {
+      "name": "@ai-toolkit/harness-claude-code",
+      "dir": "packages/providers/harness-claude-code",
+      "domain": "providers",
+      "workspaceGlobs": [
+        "packages/providers/*"
+      ],
+      "version": "0.0.0",
+      "private": false,
+      "source": "./src/index.ts",
+      "main": "./dist/index.js",
+      "module": "./dist/index.mjs",
+      "types": "./dist/index.d.ts",
+      "exports": [
+        "./package.json",
+        "."
+      ],
+      "conditions": [
+        "default",
+        "import",
+        "require",
+        "types"
+      ],
+      "publicApi": [
+        "./package.json",
+        "."
+      ],
+      "dependencies": [
+        {
+          "name": "@ai-toolkit/harness-acp",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/provider-utils",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external"
+        }
+      ],
+      "runtimeAssumptions": {
+        "nodeBuiltins": [],
+        "usesGlobalFetch": false
+      },
+      "stability": "alpha",
+      "owners": [
+        "@khulnasoft/ai-toolkit-providers"
+      ],
+      "dependencyEdges": [
+        {
+          "name": "@ai-toolkit/harness-acp",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-providers"
+        },
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-validation"
+        },
+        {
+          "name": "@ai-toolkit/provider-utils",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-core"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external",
+          "direction": "external"
+        }
+      ]
+    },
+    {
+      "name": "@ai-toolkit/harness-cline",
+      "dir": "packages/providers/harness-cline",
+      "domain": "providers",
+      "workspaceGlobs": [
+        "packages/providers/*"
+      ],
+      "version": "0.0.0",
+      "private": false,
+      "source": "./src/index.ts",
+      "main": "./dist/index.js",
+      "module": "./dist/index.mjs",
+      "types": "./dist/index.d.ts",
+      "exports": [
+        "./package.json",
+        "."
+      ],
+      "conditions": [
+        "default",
+        "import",
+        "require",
+        "types"
+      ],
+      "publicApi": [
+        "./package.json",
+        "."
+      ],
+      "dependencies": [
+        {
+          "name": "@ai-toolkit/harness-acp",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/provider-utils",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external"
+        }
+      ],
+      "runtimeAssumptions": {
+        "nodeBuiltins": [],
+        "usesGlobalFetch": false
+      },
+      "stability": "alpha",
+      "owners": [
+        "@khulnasoft/ai-toolkit-providers"
+      ],
+      "dependencyEdges": [
+        {
+          "name": "@ai-toolkit/harness-acp",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-providers"
+        },
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-validation"
+        },
+        {
+          "name": "@ai-toolkit/provider-utils",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-core"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external",
+          "direction": "external"
+        }
+      ]
+    },
+    {
+      "name": "@ai-toolkit/harness-codex",
+      "dir": "packages/providers/harness-codex",
+      "domain": "providers",
+      "workspaceGlobs": [
+        "packages/providers/*"
+      ],
+      "version": "0.0.0",
+      "private": false,
+      "source": "./src/index.ts",
+      "main": "./dist/index.js",
+      "module": "./dist/index.mjs",
+      "types": "./dist/index.d.ts",
+      "exports": [
+        "./package.json",
+        "."
+      ],
+      "conditions": [
+        "default",
+        "import",
+        "require",
+        "types"
+      ],
+      "publicApi": [
+        "./package.json",
+        "."
+      ],
+      "dependencies": [
+        {
+          "name": "@ai-toolkit/harness-acp",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/provider-utils",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external"
+        }
+      ],
+      "runtimeAssumptions": {
+        "nodeBuiltins": [],
+        "usesGlobalFetch": false
+      },
+      "stability": "alpha",
+      "owners": [
+        "@khulnasoft/ai-toolkit-providers"
+      ],
+      "dependencyEdges": [
+        {
+          "name": "@ai-toolkit/harness-acp",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-providers"
+        },
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-validation"
+        },
+        {
+          "name": "@ai-toolkit/provider-utils",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-core"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external",
+          "direction": "external"
+        }
+      ]
+    },
+    {
+      "name": "@ai-toolkit/harness-cursor",
+      "dir": "packages/providers/harness-cursor",
+      "domain": "providers",
+      "workspaceGlobs": [
+        "packages/providers/*"
+      ],
+      "version": "0.0.0",
+      "private": false,
+      "source": "./src/index.ts",
+      "main": "./dist/index.js",
+      "module": "./dist/index.mjs",
+      "types": "./dist/index.d.ts",
+      "exports": [
+        "./package.json",
+        "."
+      ],
+      "conditions": [
+        "default",
+        "import",
+        "require",
+        "types"
+      ],
+      "publicApi": [
+        "./package.json",
+        "."
+      ],
+      "dependencies": [
+        {
+          "name": "@ai-toolkit/harness-acp",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/provider-utils",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external"
+        }
+      ],
+      "runtimeAssumptions": {
+        "nodeBuiltins": [],
+        "usesGlobalFetch": false
+      },
+      "stability": "alpha",
+      "owners": [
+        "@khulnasoft/ai-toolkit-providers"
+      ],
+      "dependencyEdges": [
+        {
+          "name": "@ai-toolkit/harness-acp",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-providers"
+        },
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-validation"
+        },
+        {
+          "name": "@ai-toolkit/provider-utils",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-core"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external",
+          "direction": "external"
+        }
+      ]
+    },
+    {
+      "name": "@ai-toolkit/harness-grok-build",
+      "dir": "packages/providers/harness-grok-build",
+      "domain": "providers",
+      "workspaceGlobs": [
+        "packages/providers/*"
+      ],
+      "version": "0.0.0",
+      "private": false,
+      "source": "./src/index.ts",
+      "main": "./dist/index.js",
+      "module": "./dist/index.mjs",
+      "types": "./dist/index.d.ts",
+      "exports": [
+        "./package.json",
+        "."
+      ],
+      "conditions": [
+        "default",
+        "import",
+        "require",
+        "types"
+      ],
+      "publicApi": [
+        "./package.json",
+        "."
+      ],
+      "dependencies": [
+        {
+          "name": "@ai-toolkit/harness-acp",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/provider-utils",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external"
+        }
+      ],
+      "runtimeAssumptions": {
+        "nodeBuiltins": [],
+        "usesGlobalFetch": false
+      },
+      "stability": "alpha",
+      "owners": [
+        "@khulnasoft/ai-toolkit-providers"
+      ],
+      "dependencyEdges": [
+        {
+          "name": "@ai-toolkit/harness-acp",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-providers"
+        },
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-validation"
+        },
+        {
+          "name": "@ai-toolkit/provider-utils",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-core"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external",
+          "direction": "external"
+        }
+      ]
+    },
+    {
+      "name": "@ai-toolkit/harness-opencode",
+      "dir": "packages/providers/harness-opencode",
+      "domain": "providers",
+      "workspaceGlobs": [
+        "packages/providers/*"
+      ],
+      "version": "0.0.0",
+      "private": false,
+      "source": "./src/index.ts",
+      "main": "./dist/index.js",
+      "module": "./dist/index.mjs",
+      "types": "./dist/index.d.ts",
+      "exports": [
+        "./package.json",
+        "."
+      ],
+      "conditions": [
+        "default",
+        "import",
+        "require",
+        "types"
+      ],
+      "publicApi": [
+        "./package.json",
+        "."
+      ],
+      "dependencies": [
+        {
+          "name": "@ai-toolkit/harness-acp",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/provider-utils",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external"
+        }
+      ],
+      "runtimeAssumptions": {
+        "nodeBuiltins": [],
+        "usesGlobalFetch": false
+      },
+      "stability": "alpha",
+      "owners": [
+        "@khulnasoft/ai-toolkit-providers"
+      ],
+      "dependencyEdges": [
+        {
+          "name": "@ai-toolkit/harness-acp",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-providers"
+        },
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-validation"
+        },
+        {
+          "name": "@ai-toolkit/provider-utils",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-core"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external",
+          "direction": "external"
+        }
+      ]
+    },
+    {
+      "name": "@ai-toolkit/harness-pi",
+      "dir": "packages/providers/harness-pi",
+      "domain": "providers",
+      "workspaceGlobs": [
+        "packages/providers/*"
+      ],
+      "version": "0.0.0",
+      "private": false,
+      "source": "./src/index.ts",
+      "main": "./dist/index.js",
+      "module": "./dist/index.mjs",
+      "types": "./dist/index.d.ts",
+      "exports": [
+        "./package.json",
+        "."
+      ],
+      "conditions": [
+        "default",
+        "import",
+        "require",
+        "types"
+      ],
+      "publicApi": [
+        "./package.json",
+        "."
+      ],
+      "dependencies": [
+        {
+          "name": "@ai-toolkit/harness-acp",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/provider",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/provider-utils",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "zod",
+          "version": "^3.25.76 || ^4.1.8",
+          "kind": "external"
+        }
+      ],
+      "runtimeAssumptions": {
+        "nodeBuiltins": [],
+        "usesGlobalFetch": false
+      },
+      "stability": "alpha",
+      "owners": [
+        "@khulnasoft/ai-toolkit-providers"
+      ],
+      "dependencyEdges": [
+        {
+          "name": "@ai-toolkit/harness-acp",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-providers"
+        },
         {
           "name": "@ai-toolkit/provider",
           "version": "workspace:*",
@@ -4737,12 +5875,12 @@
         },
         {
           "name": "react",
-          "version": "^18",
+          "version": "^18 || ^19",
           "kind": "external"
         },
         {
           "name": "react-dom",
-          "version": "^18",
+          "version": "^18 || ^19",
           "kind": "external"
         }
       ],
@@ -4763,13 +5901,13 @@
         },
         {
           "name": "react",
-          "version": "^18",
+          "version": "^18 || ^19",
           "kind": "external",
           "direction": "external"
         },
         {
           "name": "react-dom",
-          "version": "^18",
+          "version": "^18 || ^19",
           "kind": "external",
           "direction": "external"
         }
@@ -5410,6 +6548,52 @@
       "stability": null,
       "owners": null,
       "dependencyEdges": []
+    },
+    {
+      "name": "create-ai-provider",
+      "dir": "tools/create-ai-provider",
+      "domain": "tools",
+      "workspaceGlobs": [
+        "tools/*"
+      ],
+      "version": "0.0.1",
+      "private": false,
+      "source": null,
+      "main": "src/index.js",
+      "module": null,
+      "types": null,
+      "exports": [],
+      "conditions": [],
+      "publicApi": [],
+      "dependencies": [
+        {
+          "name": "chalk",
+          "version": "^5.6.2",
+          "kind": "external"
+        }
+      ],
+      "runtimeAssumptions": {
+        "nodeBuiltins": [
+          "node:assert/strict",
+          "node:fs",
+          "node:os",
+          "node:path",
+          "node:readline",
+          "node:test",
+          "node:url"
+        ],
+        "usesGlobalFetch": false
+      },
+      "stability": null,
+      "owners": null,
+      "dependencyEdges": [
+        {
+          "name": "chalk",
+          "version": "^5.6.2",
+          "kind": "external",
+          "direction": "external"
+        }
+      ]
     },
     {
       "name": "create-ai-sdk",
@@ -8744,6 +9928,132 @@
       ]
     },
     {
+      "name": "@example/harness-profiles",
+      "dir": "examples/04-tools/harness-profiles",
+      "domain": "examples",
+      "workspaceGlobs": [
+        "examples/*/*"
+      ],
+      "version": "0.0.0",
+      "private": true,
+      "source": null,
+      "main": null,
+      "module": null,
+      "types": null,
+      "exports": [],
+      "conditions": [],
+      "publicApi": [],
+      "dependencies": [
+        {
+          "name": "@ai-toolkit/harness",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/harness-acp",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/harness-claude-code",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/harness-cline",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/harness-codex",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/harness-cursor",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/harness-grok-build",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/harness-opencode",
+          "version": "workspace:*",
+          "kind": "workspace"
+        },
+        {
+          "name": "@ai-toolkit/harness-pi",
+          "version": "workspace:*",
+          "kind": "workspace"
+        }
+      ],
+      "runtimeAssumptions": {
+        "nodeBuiltins": [],
+        "usesGlobalFetch": false
+      },
+      "stability": null,
+      "owners": null,
+      "dependencyEdges": [
+        {
+          "name": "@ai-toolkit/harness",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-providers"
+        },
+        {
+          "name": "@ai-toolkit/harness-acp",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-providers"
+        },
+        {
+          "name": "@ai-toolkit/harness-claude-code",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-providers"
+        },
+        {
+          "name": "@ai-toolkit/harness-cline",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-providers"
+        },
+        {
+          "name": "@ai-toolkit/harness-codex",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-providers"
+        },
+        {
+          "name": "@ai-toolkit/harness-cursor",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-providers"
+        },
+        {
+          "name": "@ai-toolkit/harness-grok-build",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-providers"
+        },
+        {
+          "name": "@ai-toolkit/harness-opencode",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-providers"
+        },
+        {
+          "name": "@ai-toolkit/harness-pi",
+          "version": "workspace:*",
+          "kind": "workspace",
+          "direction": "to-providers"
+        }
+      ]
+    },
+    {
       "name": "@example/playground",
       "dir": "examples/04-tools/playground",
       "domain": "examples",
@@ -9317,649 +10627,6 @@
           "version": "3.25.76",
           "kind": "external",
           "direction": "external"
-        }
-      ]
-    },
-    {
-      "name": "@ai-toolkit/docs",
-      "dir": "apps/docs",
-      "domain": "apps",
-      "workspaceGlobs": [
-        "apps/*"
-      ],
-      "version": "0.0.0",
-      "private": true,
-      "source": null,
-      "main": null,
-      "module": null,
-      "types": null,
-      "exports": [],
-      "conditions": [],
-      "publicApi": [],
-      "dependencies": [
-        {
-          "name": "@ai-sdk/react",
-          "version": "^3.0.134",
-          "kind": "external"
-        },
-        {
-          "name": "@ai-toolkit/ai-docs",
-          "version": "workspace:*",
-          "kind": "workspace"
-        },
-        {
-          "name": "@icons-pack/react-simple-icons",
-          "version": "^13.8.0",
-          "kind": "external"
-        },
-        {
-          "name": "@orama/tokenizers",
-          "version": "^3.1.16",
-          "kind": "external"
-        },
-        {
-          "name": "@streamdown/cjk",
-          "version": "^1.0.1",
-          "kind": "external"
-        },
-        {
-          "name": "@streamdown/code",
-          "version": "^1.0.1",
-          "kind": "external"
-        },
-        {
-          "name": "@vercel/agent-readability",
-          "version": "^0.7.0",
-          "kind": "external"
-        },
-        {
-          "name": "@vercel/analytics",
-          "version": "^1.6.1",
-          "kind": "external"
-        },
-        {
-          "name": "@vercel/speed-insights",
-          "version": "^1.3.1",
-          "kind": "external"
-        },
-        {
-          "name": "ai",
-          "version": "^6.0.132",
-          "kind": "external"
-        },
-        {
-          "name": "class-variance-authority",
-          "version": "^0.7.1",
-          "kind": "external"
-        },
-        {
-          "name": "clsx",
-          "version": "^2.1.1",
-          "kind": "external"
-        },
-        {
-          "name": "cmdk",
-          "version": "^1.1.1",
-          "kind": "external"
-        },
-        {
-          "name": "dexie",
-          "version": "^4.2.1",
-          "kind": "external"
-        },
-        {
-          "name": "dexie-react-hooks",
-          "version": "^4.2.0",
-          "kind": "external"
-        },
-        {
-          "name": "feed",
-          "version": "^5.1.0",
-          "kind": "external"
-        },
-        {
-          "name": "fumadocs-core",
-          "version": "16.2.2",
-          "kind": "external"
-        },
-        {
-          "name": "fumadocs-mdx",
-          "version": "14.0.4",
-          "kind": "external"
-        },
-        {
-          "name": "fumadocs-ui",
-          "version": "16.2.2",
-          "kind": "external"
-        },
-        {
-          "name": "geist",
-          "version": "^1.7.1",
-          "kind": "external"
-        },
-        {
-          "name": "jotai",
-          "version": "^2.15.2",
-          "kind": "external"
-        },
-        {
-          "name": "lucide-react",
-          "version": "^0.555.0",
-          "kind": "external"
-        },
-        {
-          "name": "mermaid",
-          "version": "^11.12.2",
-          "kind": "external"
-        },
-        {
-          "name": "motion",
-          "version": "^12.23.25",
-          "kind": "external"
-        },
-        {
-          "name": "nanoid",
-          "version": "^5.1.6",
-          "kind": "external"
-        },
-        {
-          "name": "next",
-          "version": "16.3.3",
-          "kind": "external"
-        },
-        {
-          "name": "next-themes",
-          "version": "^0.4.6",
-          "kind": "external"
-        },
-        {
-          "name": "radix-ui",
-          "version": "1.6.4",
-          "kind": "external"
-        },
-        {
-          "name": "react",
-          "version": "^19.2.3",
-          "kind": "external"
-        },
-        {
-          "name": "react-dom",
-          "version": "^19.2.3",
-          "kind": "external"
-        },
-        {
-          "name": "react-player",
-          "version": "^3.4.0",
-          "kind": "external"
-        },
-        {
-          "name": "shiki",
-          "version": "3.19.0",
-          "kind": "external"
-        },
-        {
-          "name": "sonner",
-          "version": "^2.0.7",
-          "kind": "external"
-        },
-        {
-          "name": "streamdown",
-          "version": "^2.1.0",
-          "kind": "external"
-        },
-        {
-          "name": "tailwind-merge",
-          "version": "^3.4.0",
-          "kind": "external"
-        },
-        {
-          "name": "use-stick-to-bottom",
-          "version": "^1.1.1",
-          "kind": "external"
-        },
-        {
-          "name": "vaul",
-          "version": "^1.1.2",
-          "kind": "external"
-        },
-        {
-          "name": "zod",
-          "version": "^4.1.13",
-          "kind": "external"
-        }
-      ],
-      "runtimeAssumptions": {
-        "nodeBuiltins": [
-          "node:fs",
-          "node:fs/promises",
-          "node:os",
-          "node:path",
-          "node:url"
-        ],
-        "usesGlobalFetch": false
-      },
-      "stability": null,
-      "owners": null,
-      "dependencyEdges": [
-        {
-          "name": "@ai-sdk/react",
-          "version": "^3.0.134",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "@ai-toolkit/ai-docs",
-          "version": "workspace:*",
-          "kind": "workspace",
-          "direction": "to-special"
-        },
-        {
-          "name": "@icons-pack/react-simple-icons",
-          "version": "^13.8.0",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "@orama/tokenizers",
-          "version": "^3.1.16",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "@streamdown/cjk",
-          "version": "^1.0.1",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "@streamdown/code",
-          "version": "^1.0.1",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "@vercel/agent-readability",
-          "version": "^0.7.0",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "@vercel/analytics",
-          "version": "^1.6.1",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "@vercel/speed-insights",
-          "version": "^1.3.1",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "ai",
-          "version": "^6.0.132",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "class-variance-authority",
-          "version": "^0.7.1",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "clsx",
-          "version": "^2.1.1",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "cmdk",
-          "version": "^1.1.1",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "dexie",
-          "version": "^4.2.1",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "dexie-react-hooks",
-          "version": "^4.2.0",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "feed",
-          "version": "^5.1.0",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "fumadocs-core",
-          "version": "16.2.2",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "fumadocs-mdx",
-          "version": "14.0.4",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "fumadocs-ui",
-          "version": "16.2.2",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "geist",
-          "version": "^1.7.1",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "jotai",
-          "version": "^2.15.2",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "lucide-react",
-          "version": "^0.555.0",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "mermaid",
-          "version": "^11.12.2",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "motion",
-          "version": "^12.23.25",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "nanoid",
-          "version": "^5.1.6",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "next",
-          "version": "16.3.3",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "next-themes",
-          "version": "^0.4.6",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "radix-ui",
-          "version": "1.6.4",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "react",
-          "version": "^19.2.3",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "react-dom",
-          "version": "^19.2.3",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "react-player",
-          "version": "^3.4.0",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "shiki",
-          "version": "3.19.0",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "sonner",
-          "version": "^2.0.7",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "streamdown",
-          "version": "^2.1.0",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "tailwind-merge",
-          "version": "^3.4.0",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "use-stick-to-bottom",
-          "version": "^1.1.1",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "vaul",
-          "version": "^1.1.2",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "zod",
-          "version": "^4.1.13",
-          "kind": "external",
-          "direction": "external"
-        }
-      ]
-    },
-    {
-      "name": "@ai-toolkit/studio",
-      "dir": "apps/studio",
-      "domain": "apps",
-      "workspaceGlobs": [
-        "apps/*"
-      ],
-      "version": "0.0.0",
-      "private": true,
-      "source": null,
-      "main": null,
-      "module": null,
-      "types": null,
-      "exports": [],
-      "conditions": [],
-      "publicApi": [],
-      "dependencies": [
-        {
-          "name": "lucide-react",
-          "version": "^0.545.0",
-          "kind": "external"
-        },
-        {
-          "name": "next",
-          "version": "^15.5.9",
-          "kind": "external"
-        },
-        {
-          "name": "react",
-          "version": "^18",
-          "kind": "external"
-        },
-        {
-          "name": "react-dom",
-          "version": "^18",
-          "kind": "external"
-        },
-        {
-          "name": "@ai-toolkit/design",
-          "version": "workspace:*",
-          "kind": "workspace"
-        }
-      ],
-      "runtimeAssumptions": {
-        "nodeBuiltins": [
-          "node:fs",
-          "node:path"
-        ],
-        "usesGlobalFetch": false
-      },
-      "stability": null,
-      "owners": null,
-      "dependencyEdges": [
-        {
-          "name": "lucide-react",
-          "version": "^0.545.0",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "next",
-          "version": "^15.5.9",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "react",
-          "version": "^18",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "react-dom",
-          "version": "^18",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "@ai-toolkit/design",
-          "version": "workspace:*",
-          "kind": "workspace",
-          "direction": "to-legacy"
-        }
-      ]
-    },
-    {
-      "name": "@ai-toolkit/www",
-      "dir": "apps/www",
-      "domain": "apps",
-      "workspaceGlobs": [
-        "apps/*"
-      ],
-      "version": "0.0.0",
-      "private": true,
-      "source": null,
-      "main": null,
-      "module": null,
-      "types": null,
-      "exports": [],
-      "conditions": [],
-      "publicApi": [],
-      "dependencies": [
-        {
-          "name": "ai-toolkit",
-          "version": "workspace:*",
-          "kind": "workspace"
-        },
-        {
-          "name": "@ai-toolkit/react",
-          "version": "workspace:*",
-          "kind": "workspace"
-        },
-        {
-          "name": "lucide-react",
-          "version": "^0.545.0",
-          "kind": "external"
-        },
-        {
-          "name": "next",
-          "version": "^15.5.9",
-          "kind": "external"
-        },
-        {
-          "name": "react",
-          "version": "^18",
-          "kind": "external"
-        },
-        {
-          "name": "react-dom",
-          "version": "^18",
-          "kind": "external"
-        },
-        {
-          "name": "@ai-toolkit/design",
-          "version": "workspace:*",
-          "kind": "workspace"
-        }
-      ],
-      "runtimeAssumptions": {
-        "nodeBuiltins": [
-          "node:fs",
-          "node:path"
-        ],
-        "usesGlobalFetch": false
-      },
-      "stability": null,
-      "owners": null,
-      "dependencyEdges": [
-        {
-          "name": "ai-toolkit",
-          "version": "workspace:*",
-          "kind": "workspace",
-          "direction": "to-core"
-        },
-        {
-          "name": "@ai-toolkit/react",
-          "version": "workspace:*",
-          "kind": "workspace",
-          "direction": "to-adapters"
-        },
-        {
-          "name": "lucide-react",
-          "version": "^0.545.0",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "next",
-          "version": "^15.5.9",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "react",
-          "version": "^18",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "react-dom",
-          "version": "^18",
-          "kind": "external",
-          "direction": "external"
-        },
-        {
-          "name": "@ai-toolkit/design",
-          "version": "workspace:*",
-          "kind": "workspace",
-          "direction": "to-legacy"
         }
       ]
     }

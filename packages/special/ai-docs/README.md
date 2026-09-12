@@ -34,8 +34,8 @@ upstream version:
    `dist/versions.d.ts`).
 3. Update `version` in `package.json` to the upstream version.
 4. Run `pnpm install`, then verify with
-   `pnpm --filter @ai-toolkit/docs type-check` and
-   `pnpm --filter @ai-toolkit/docs build`.
+   `pnpm --filter @ai-toolkit/apps type-check` and
+   `pnpm --filter @ai-toolkit/apps build:docs`.
 
 ## Layout
 

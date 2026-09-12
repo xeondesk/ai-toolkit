@@ -109,14 +109,14 @@
     "lucide-react": "^0.545.0"
   },
   "peerDependencies": {
-    "react": "^18",
-    "react-dom": "^18"
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19"
   },
   "devDependencies": {
     "@khulnasoft/ai-tsconfig": "workspace:*",
     "@types/node": "20.17.24",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
     "del-cli": "^6.0.0",
     "eslint-config-khulnasoft-ai": "workspace:*",
     "tsup": "^7.2.0",
