@@ -18,7 +18,7 @@
   ],
   "references": [
     {
-      "path": "../../core/ai"
+      "path": "../../core/ai-toolkit"
     }
   ]
 }

@@ -35,7 +35,7 @@ export interface ToolExecutionOptions<
    * If you need to mutate the context, analyze the tool calls and results
    * in `prepareStep` and update it there.
    */
-   context: CONTEXT;
+  context: CONTEXT;
 
   /**
    * Legacy global context. Prefer the typed per-tool `context`.

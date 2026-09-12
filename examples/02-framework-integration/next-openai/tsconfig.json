@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,14 +23,27 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"],
-      "@component/*": ["./component/*"],
-      "@util/*": ["./util/*"]
+      "@/*": [
+        "./*"
+      ],
+      "@component/*": [
+        "./component/*"
+      ],
+      "@util/*": [
+        "./util/*"
+      ]
     },
     "noEmit": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
   "references": [
     {
       "path": "../../../packages/adapters/react"
@@ -35,7 +52,7 @@
       "path": "../../../packages/adapters/rsc"
     },
     {
-      "path": "../../../packages/core/ai"
+      "path": "../../../packages/core/ai-toolkit"
     },
     {
       "path": "../../../packages/core/provider-utils"

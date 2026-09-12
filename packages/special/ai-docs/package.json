@@ -344,7 +344,7 @@
     "typescript": "^5.9.3"
   },
   "scripts": {
-    "build": "rm -rf dist docs template && node ./scripts/bundle-template.mjs && node ./scripts/bundle-docs.mjs && tsc -p tsconfig.runtime.json && tsup --config tsup.config.cli.ts",
-    "dev": "tsc -p tsconfig.runtime.json --watch --preserveWatchOutput"
+    "build": "test -d dist && test -f dist/config.js && echo \"@ai-toolkit/ai-docs: vendored dist verified\"",
+    "dev": "echo \"@ai-toolkit/ai-docs: vendored dist has no watch mode\""
   }
 }

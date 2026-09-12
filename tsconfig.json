@@ -259,10 +259,10 @@
       "path": "examples/03-integrations/next-openai-upstash-rate-limits"
     },
     {
-      "path": "examples/04-tools/playground"
+      "path": "examples/04-tools/harness-profiles"
     },
     {
-      "path": "examples/04-tools/harness-profiles"
+      "path": "examples/04-tools/playground"
     }
   ],
   "include": [],

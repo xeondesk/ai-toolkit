@@ -983,9 +983,7 @@ async function executeTools<TOOLS extends ToolSet>({
 
   return toolOutputs
     .map(result => result?.output)
-    .filter(
-      (output): output is NonNullable<typeof output> => output != null,
-    );
+    .filter((output): output is NonNullable<typeof output> => output != null);
 }
 
 class DefaultGenerateTextResult<TOOLS extends ToolSet, OUTPUT extends Output>

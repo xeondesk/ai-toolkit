@@ -16,25 +16,25 @@ This is a **monorepo** using pnpm workspaces and Turborepo.
 
 ### Key Directories
 
-| Directory                             | Description                                                                                  |
-| ------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Directory                             | Description                                                                             |
+| ------------------------------------- | --------------------------------------------------------------------------------------- |
 | `packages/core/ai-toolkit`            | Main SDK package (`ai-toolkit` on npm, formerly `ai`)                                   |
-| `packages/validation/provider`        | Provider interface specifications (`@ai-toolkit/provider`)                                   |
-| `packages/core/provider-utils`        | Shared utilities for providers and core (`@ai-toolkit/provider-utils`)                       |
-| `packages/core/runtime`               | Browser-safe runtime contracts (`@ai-toolkit/runtime`; no Node builtins)                     |
-| `packages/validation/capabilities`    | Model capability declarations (`@ai-toolkit/capabilities`)                                   |
-| `packages/providers/<provider>`       | AI provider implementations (openai, anthropic, google, azure, amazon-bedrock, etc.)         |
-| `packages/adapters/<framework>` | UI framework integrations (react, vue, svelte, angular, rsc)                                 |
-| `packages/ui/elements` | React chat components (Conversation, Message, PromptInput) |
-| `packages/special/<package>` | Special-purpose packages (gateway, khulnasoft, codemod, devtools)            |
-| `packages/mcp`                        | Model Context Protocol implementation (`@ai-toolkit/mcp`)                                    |
-| `packages/validation/valibot`         | Valibot schema adapter (`@ai-toolkit/valibot`)                                               |
-| `packages/infrastructure/test-server` | Internal test utilities (not published)                                                      |
+| `packages/validation/provider`        | Provider interface specifications (`@ai-toolkit/provider`)                              |
+| `packages/core/provider-utils`        | Shared utilities for providers and core (`@ai-toolkit/provider-utils`)                  |
+| `packages/core/runtime`               | Browser-safe runtime contracts (`@ai-toolkit/runtime`; no Node builtins)                |
+| `packages/validation/capabilities`    | Model capability declarations (`@ai-toolkit/capabilities`)                              |
+| `packages/providers/<provider>`       | AI provider implementations (openai, anthropic, google, azure, amazon-bedrock, etc.)    |
+| `packages/adapters/<framework>`       | UI framework integrations (react, vue, svelte, angular, rsc)                            |
+| `packages/ui/elements`                | React chat components (Conversation, Message, PromptInput)                              |
+| `packages/special/<package>`          | Special-purpose packages (gateway, khulnasoft, codemod, devtools)                       |
+| `packages/mcp`                        | Model Context Protocol implementation (`@ai-toolkit/mcp`)                               |
+| `packages/validation/valibot`         | Valibot schema adapter (`@ai-toolkit/valibot`)                                          |
+| `packages/infrastructure/test-server` | Internal test utilities (not published)                                                 |
 | `packages/codemod`                    | ⛔ Removed — moved to `packages/special/codemod` (see `architecture/domain-mapping.md`) |
-| `examples/`                           | Example applications in `01-foundations` … `04-tools` (indexed by `registry.json`)           |
-| `content/`                            | Documentation source files (MDX), consumed by `apps/docs`                                    |
-| `contributing/`                       | Contributor guides and documentation                                                         |
-| `tools/`                              | Internal tooling (`scripts/`, `eslint-config`, `tsconfig`, …)                                |
+| `examples/`                           | Example applications in `01-foundations` … `04-tools` (indexed by `registry.json`)      |
+| `content/`                            | Documentation source files (MDX), consumed by `apps/docs`                               |
+| `contributing/`                       | Contributor guides and documentation                                                    |
+| `tools/`                              | Internal tooling (`scripts/`, `eslint-config`, `tsconfig`, …)                           |
 
 ### Core Package Dependencies
 
@@ -96,25 +96,25 @@ pnpm tsx src/stream-text/openai.ts    # Run a specific example
 
 ## Core APIs
 
-| Function                   | Purpose                    | Package |
-| -------------------------- | -------------------------- | ------- |
-| `generateText`             | Generate text completion   | `ai-toolkit`    |
-| `streamText`               | Stream text completion     | `ai-toolkit`    |
-| `generateObject`           | Generate structured output | `ai-toolkit`    |
-| `streamObject`             | Stream structured output   | `ai-toolkit`    |
-| `embed` / `embedMany`      | Generate embeddings        | `ai-toolkit`    |
-| `generateImage`            | Generate images            | `ai-toolkit`    |
-| `tool`                     | Define a tool              | `ai-toolkit`    |
-| `jsonSchema` / `zodSchema` | Define schemas             | `ai-toolkit`    |
+| Function                   | Purpose                    | Package      |
+| -------------------------- | -------------------------- | ------------ |
+| `generateText`             | Generate text completion   | `ai-toolkit` |
+| `streamText`               | Stream text completion     | `ai-toolkit` |
+| `generateObject`           | Generate structured output | `ai-toolkit` |
+| `streamObject`             | Stream structured output   | `ai-toolkit` |
+| `embed` / `embedMany`      | Generate embeddings        | `ai-toolkit` |
+| `generateImage`            | Generate images            | `ai-toolkit` |
+| `tool`                     | Define a tool              | `ai-toolkit` |
+| `jsonSchema` / `zodSchema` | Define schemas             | `ai-toolkit` |
 
 ## Import Patterns
 
 | What                                          | Import From                                           |
 | --------------------------------------------- | ----------------------------------------------------- |
-| Core functions (`generateText`, `streamText`) | `ai-toolkit`                                                  |
-| Tool/schema utilities (`tool`, `jsonSchema`)  | `ai-toolkit`                                                  |
+| Core functions (`generateText`, `streamText`) | `ai-toolkit`                                          |
+| Tool/schema utilities (`tool`, `jsonSchema`)  | `ai-toolkit`                                          |
 | Provider implementations                      | `@ai-toolkit/<provider>` (e.g., `@ai-toolkit/openai`) |
-| Error classes                                 | `ai-toolkit` (re-exports from `@ai-toolkit/provider`)         |
+| Error classes                                 | `ai-toolkit` (re-exports from `@ai-toolkit/provider`) |
 | Provider type interfaces (`LanguageModelV3`)  | `@ai-toolkit/provider`                                |
 | Provider implementation utilities             | `@ai-toolkit/provider-utils`                          |
 
