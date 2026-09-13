@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import '@ai-toolkit/design/globals.css';
+import './globals.css';
 import { StudioShell } from '@/components/studio-shell';
 import { getSearchIndex } from '@/lib/search';
 

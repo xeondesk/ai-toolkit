@@ -124,7 +124,7 @@ ls examples/02-framework-integration/  # All framework examples
 code apps/docs/content/01-getting-started/index.mdx
 
 # Verify it renders locally
-pnpm dev --filter=@ai-toolkit/docs
+pnpm --filter @ai-toolkit/apps dev:docs
 # Visit http://localhost:3000
 ```
 
@@ -448,7 +448,7 @@ code apps/docs/content/
 # Most docs are self-contained files
 
 # 3. Preview locally
-pnpm dev --filter=@ai-toolkit/docs
+pnpm --filter @ai-toolkit/apps dev:docs
 # Visit http://localhost:3000
 
 # 4. Commit and submit PR

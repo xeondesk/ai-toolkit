@@ -1,8 +1,9 @@
 import { DocsLayout } from '@/components/ai-docs/docs-layout';
 import { getRootLang } from '@/lib/ai-docs/root-params';
 import { cookbookSource } from '@/lib/ai-docs/source';
+import type { ReactNode } from 'react';
 
-const Layout = async ({ children }: LayoutProps<'/[lang]/cookbook'>) => {
+const Layout = async ({ children }: { children: ReactNode }) => {
   const lang = await getRootLang();
 
   return (

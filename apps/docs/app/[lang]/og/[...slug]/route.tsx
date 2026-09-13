@@ -14,7 +14,7 @@ const bundles = [source, providersSource.source, cookbookSource.source];
 
 export const GET = async (
   _request: NextRequest,
-  { params }: RouteContext<'/[lang]/og/[...slug]'>,
+  { params }: { params: Promise<{ lang: string; slug: string[] }> },
 ) => {
   const { slug, lang } = await params;
   const pageSlugs = slug.slice(0, -1);
@@ -98,7 +98,9 @@ export const GET = async (
 
 export const generateStaticParams = async ({
   params,
-}: RouteContext<'/[lang]/og/[...slug]'>) => {
+}: {
+  params: Promise<{ lang: string; slug: string[] }>;
+}) => {
   const { lang } = await params;
 
   return bundles.flatMap(bundle =>

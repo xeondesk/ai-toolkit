@@ -762,3 +762,4 @@ After release, continue with:
 | next-openai-telemetry-sentry      | 03-integrations          | nextjs         |
 | next-openai-upstash-rate-limits   | 03-integrations          | nextjs         |
 | playground                        | 04-tools                 | nextjs         |
+

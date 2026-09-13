@@ -513,7 +513,7 @@ describe('toUIMessageChunk', () => {
       toolCallId: 'call-undefined',
       // This must be `null` so that we don't lose the property when this is
       // serialized to JSON. See the following issue for more details:
-      // https://github.com/vercel/ai/issues/15854
+      // https://github.com/khulnasoft/ai-toolkit/issues/15854
       output: null,
       dynamic: true,
     });

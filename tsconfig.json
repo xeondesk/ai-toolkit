@@ -190,15 +190,6 @@
       "path": "packages/mcp"
     },
     {
-      "path": "apps/docs"
-    },
-    {
-      "path": "apps/studio"
-    },
-    {
-      "path": "apps/www"
-    },
-    {
       "path": "examples/01-foundations/ai-functions"
     },
     {

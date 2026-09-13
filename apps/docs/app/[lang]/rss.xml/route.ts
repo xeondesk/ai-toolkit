@@ -51,7 +51,7 @@ const getFeed = async (lang: string) => {
 
 export const GET = async (
   _req: NextRequest,
-  { params }: RouteContext<'/[lang]/rss.xml'>,
+  { params }: { params: Promise<{ lang: string }> },
 ) => {
   const { lang } = await params;
   const rss = await getFeed(lang);

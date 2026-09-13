@@ -160,7 +160,7 @@ export default function GatewayPage() {
                 />
               </Button>
             </Link>
-            <Link href="https://github.com/vercel/ai">
+            <Link href="https://github.com/khulnasoft/ai-toolkit">
               <Button variant="outline" size="lg" className="text-lg px-8 py-6">
                 View on GitHub
               </Button>
