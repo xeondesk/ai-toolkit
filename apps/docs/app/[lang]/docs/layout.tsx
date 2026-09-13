@@ -1,8 +1,9 @@
 import { DocsLayout } from '@/components/ai-docs/docs-layout';
 import { getRootLang } from '@/lib/ai-docs/root-params';
 import { source } from '@/lib/ai-docs/source';
+import type { ReactNode } from 'react';
 
-const Layout = async ({ children }: LayoutProps<'/[lang]/docs'>) => {
+const Layout = async ({ children }: { children: ReactNode }) => {
   const lang = await getRootLang();
 
   return (

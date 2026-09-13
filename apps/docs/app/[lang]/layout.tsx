@@ -10,6 +10,7 @@ import { i18n } from '@/lib/ai-docs/i18n';
 import { getRootLang } from '@/lib/ai-docs/root-params';
 import { isSiteUrlConfigured, siteUrl } from '@/lib/ai-docs/site-url';
 import { cn } from '@/lib/utils';
+import type { ReactNode } from 'react';
 
 export const generateStaticParams = () =>
   i18n.languages.map(lang => ({ lang }));
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: isSiteUrlConfigured ? siteUrl : undefined,
 };
 
-const Layout = async ({ children }: LayoutProps<'/[lang]'>) => {
+const Layout = async ({ children }: { children: ReactNode }) => {
   const lang = await getRootLang();
 
   return (

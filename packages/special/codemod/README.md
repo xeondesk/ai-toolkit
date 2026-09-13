@@ -142,6 +142,7 @@ npx @ai-toolkit/codemod v5/rename-format-stream-part .
 | Codemod                                                     | Description                                                          |
 | ----------------------------------------------------------- | -------------------------------------------------------------------- |
 | `v6/add-await-converttomodelmessages`                       | Transforms v6/add await converttomodelmessages                       |
+| `v6/rename-ai-to-ai-toolkit`                                | Transforms v6/rename ai to ai toolkit                                |
 | `v6/rename-converttocoremessages-to-converttomodelmessages` | Transforms v6/rename converttocoremessages to converttomodelmessages |
 | `v6/rename-core-message-to-model-message`                   | Transforms v6/rename core message to model message                   |
 | `v6/rename-mock-v2-to-v3`                                   | Transforms v6/rename mock v2 to v3                                   |

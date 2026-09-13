@@ -10,7 +10,7 @@ const route = createAgentsRoute({
 // (the factory types its context argument as optional).
 export const GET = (
   request: NextRequest,
-  context: RouteContext<'/[lang]/agents.md'>,
+  context: { params: Promise<{ lang: string }> },
 ) => route.GET(request, context);
 
 export const generateStaticParams = route.generateStaticParams;
